@@ -1,0 +1,13 @@
+ItemEvents.tooltip(event => {
+    event.add("kubejs:command_wand", "需要左手拿着命令方块，且只能放在创造稳定核心上方")
+    event.add("minecraft:crimson_stem", "将橡木原木放置在转换室获得")
+    event.add("minecraft:warped_stem", "将白桦木原木放置在转换室获得")
+    event.add("minecraft:bone_block", "将钙块放置在转换室获得")
+    event.add("minecraft:moss_block", "将草方块放置在转换室获得")
+    event.add("minecraft:sculk", "将苔藓块放置在转换室获得")
+    event.add("gtceu:magmatter_block", "将一组及以上的磁物质锭丢入创造之门获得")
+    event.add("minecraft:command_block", "将磁流体约束恒星物质块丢入创造之门获得")
+    event.add("minecraft:chain_command_block", "将连锁命令方块核心与即将破坏的命令方块聚合获得")
+    event.add("minecraft:repeating_command_block", "循环命令方块核心与即将破坏的连锁命令方块聚合获得")
+    event.add("ad_astra:oxygen_loader", "§c仅合成，无法产出氧气")
+})

@@ -1,0 +1,10 @@
+disableDrift: true
+
+enablePrimitiveVoidOre: false
+
+oreMultiplier: 4
+
+spacetimePip: 2147483647
+
+eioFluidRate: 16
+
