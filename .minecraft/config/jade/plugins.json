@@ -61,14 +61,12 @@
     "extreme": true,
     "compressor": true
   },
-  "pipez": {
-    "pipe": true
-  },
   "gtceu": {
     "auto_output_info": true,
     "primitive_pump": true,
     "workable_provider": true,
     "transformer": true,
+    "mana_container_provider": true,
     "controllable_provider": true,
     "exhaust_vent_info": true,
     "me_pattern_buffer": true,

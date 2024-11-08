@@ -49,30 +49,6 @@ ServerEvents.recipes(event => {
         C: "avaritia:double_compressed_crafting_table"
     })
 
-    event.shaped(Registries.getItemStack("gtocore:primitive_robot_arm", 64), [
-        "AAA",
-        "BEB",
-        "CDE"
-    ], {
-        A: "gtceu:potin_tiny_fluid_pipe",
-        B: "gtceu:bronze_gear",
-        C: "gtocore:precision_steam_mechanism",
-        D: "#gtceu:circuits/ulv",
-        E: "gtceu:bronze_rod"
-    })
-
-    event.shaped(Registries.getItemStack("gtocore:primitive_fluid_regulator", 64), [
-        "BAE",
-        "DFA",
-        "ECB"
-    ], {
-        A: "gtceu:potin_tiny_fluid_pipe",
-        B: "gtceu:bronze_rotor",
-        C: "gtocore:precision_steam_mechanism",
-        D: "#gtceu:circuits/ulv",
-        E: "gtceu:bronze_bolt",
-        F: "gtceu:copper_normal_fluid_pipe"
-    })
 
     event.shaped("gtmthings:creative_laser_hatch", [
         "ABA",
