@@ -21,7 +21,7 @@
 .minecraft/*.json
 .minecraft/config/oculus.properties
 .minecraft/config/roughlyenoughitems/
-.minecraft/mods/*
+.minecraft/mods/.index/
 .minecraft/kubejs/jsconfig.json
 .minecraft/icon.png
 /config/
