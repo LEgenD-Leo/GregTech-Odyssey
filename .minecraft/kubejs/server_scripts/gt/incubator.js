@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
     })
 
     gtr.incubator("gtocore:variation_wood")
-        .itemInputs("64x kubejs:barnarda_log", "16x minecraft:crimson_stem", "64x #forge:dusts/wood", "gtceu:lapotron_dust")
+        .itemInputs("64x gtocore:barnarda_c_log", "16x minecraft:crimson_stem", "64x #forge:dusts/wood", "gtceu:lapotron_dust")
         .inputFluids("gtceu:unknowwater 10000", "gtceu:biomass 1000")
         .itemOutputs("64x kubejs:variation_wood")
         .EUt(GTValues.VA[GTValues.UHV])
@@ -219,7 +219,7 @@ ServerEvents.recipes(event => {
         .addData("radioactivity", 440)
 
     gtr.incubator("gtocore:variation_wood1")
-        .itemInputs("64x kubejs:barnarda_log", "16x minecraft:warped_stem", "64x #forge:dusts/wood", "gtceu:lapotron_dust")
+        .itemInputs("64x gtocore:barnarda_c_log", "16x minecraft:warped_stem", "64x #forge:dusts/wood", "gtceu:lapotron_dust")
         .inputFluids("gtceu:unknowwater 10000", "gtceu:biomass 1000")
         .itemOutputs("64x kubejs:variation_wood")
         .EUt(GTValues.VA[GTValues.UHV])

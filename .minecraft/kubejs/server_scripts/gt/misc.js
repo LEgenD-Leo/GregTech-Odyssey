@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
         .EUt(16 * GTValues.VA[GTValues.MAX])
         .duration(20)
         .CWUt(GTValues.VA[GTValues.MAX])
-        .dimension("kubejs:create")
+        .dimension("gtocore:create")
 
     for (let index = 0; index < 8; index++) {
         gtr.bedrock_drilling_rig("gtocore:bedrock_dust_" + index)
@@ -502,21 +502,21 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .circuit(4)
         .duration(200)
-        .dimension("kubejs:void")
+        .dimension("gtocore:void")
 
     gtr.gas_collector("gtocore:flat")
         .outputFluids("gtceu:air 10000")
         .EUt(16)
         .circuit(5)
         .duration(200)
-        .dimension("kubejs:flat")
+        .dimension("gtocore:flat")
 
-    gtr.gas_collector("gtocore:barnarda")
+    gtr.gas_collector("gtocore:barnarda_c")
         .outputFluids("gtceu:barnarda_air 10000")
         .EUt(1024)
         .circuit(6)
         .duration(200)
-        .dimension("kubejs:barnarda")
+        .dimension("gtocore:barnarda_c")
 
     gtr.large_boiler("gtocore:tin_bucket")
         .itemInputs("1x gtceu:tin_ingot")
@@ -580,7 +580,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("4x kubejs:end_data")
         .EUt(512)
         .duration(4000)
-        .dimension("kubejs:pluto")
+        .dimension("gtocore:pluto")
 
     gtr.forge_hammer("gtocore:long_netherite_rod")
         .itemInputs("2x gtocore:netherite_rod")

@@ -1,9 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "kubejs:block/barnarda_planks",
-    "top": "kubejs:block/barnarda_planks",
-    "side": "kubejs:block/barnarda_planks"
-  },
-  "render_type": "solid"
-}

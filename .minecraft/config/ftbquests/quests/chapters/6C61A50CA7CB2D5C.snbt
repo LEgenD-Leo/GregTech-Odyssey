@@ -804,7 +804,7 @@
 			dependencies: ["27A7B0A7984A95E2"]
 			id: "5010011959CF5337"
 			tasks: [{
-				dimension: "kubejs:ceres"
+				dimension: "gtocore:ceres"
 				id: "4661CE23F70EE69E"
 				title: "谷神星"
 				type: "dimension"
@@ -1397,7 +1397,7 @@
 			dependencies: ["459ADFC4C826B296"]
 			id: "73613E3EBEFFB326"
 			tasks: [{
-				dimension: "kubejs:io"
+				dimension: "gtocore:io"
 				id: "322F6EC282672EDF"
 				title: "木卫一"
 				type: "dimension"
@@ -1409,7 +1409,7 @@
 			dependencies: ["459ADFC4C826B296"]
 			id: "761877FE2F5E2E2E"
 			tasks: [{
-				dimension: "kubejs:ganymede"
+				dimension: "gtocore:ganymede"
 				id: "1C809A36C617A480"
 				title: "木卫三"
 				type: "dimension"
@@ -1481,7 +1481,7 @@
 			dependencies: ["045213D417DE5A75"]
 			id: "61140578961B01A9"
 			tasks: [{
-				dimension: "kubejs:pluto"
+				dimension: "gtocore:pluto"
 				id: "31DA86E1A97BF813"
 				title: "冥王星"
 				type: "dimension"
@@ -1493,7 +1493,7 @@
 			dependencies: ["045213D417DE5A75"]
 			id: "22B38057B7705160"
 			tasks: [{
-				dimension: "kubejs:enceladus"
+				dimension: "gtocore:enceladus"
 				id: "41C8995FDDD8DF81"
 				title: "土卫二"
 				type: "dimension"
@@ -1505,7 +1505,7 @@
 			dependencies: ["045213D417DE5A75"]
 			id: "7E8D49D03B9CF783"
 			tasks: [{
-				dimension: "kubejs:titan"
+				dimension: "gtocore:titan"
 				id: "2660E03A1F112547"
 				title: "土卫六"
 				type: "dimension"
@@ -1646,7 +1646,7 @@
 			dependencies: ["60FA18C7093410F8"]
 			id: "7796B2AE8F20C564"
 			tasks: [{
-				dimension: "kubejs:barnarda"
+				dimension: "gtocore:barnarda_c"
 				id: "4C86D85114E0D472"
 				title: "巴纳德C"
 				type: "dimension"
@@ -1749,7 +1749,7 @@
 			id: "5DDB65F09BF7CB42"
 			optional: true
 			rewards: [{
-				command: "/execute in kubejs:ceres run tp 0 200 0"
+				command: "/execute in gtocore:ceres run tp 0 200 0"
 				elevate_perms: true
 				id: "5DABDE58E85A1554"
 				type: "command"
@@ -1768,7 +1768,7 @@
 			id: "0605583CFB358CAA"
 			optional: true
 			rewards: [{
-				command: "/execute in kubejs:io run tp 0 200 0"
+				command: "/execute in gtocore:io run tp 0 200 0"
 				elevate_perms: true
 				id: "1B9F96DC71464F25"
 				type: "command"
@@ -1787,7 +1787,7 @@
 			id: "523A8CBF30530A08"
 			optional: true
 			rewards: [{
-				command: "/execute in kubejs:ganymede run tp 0 200 0"
+				command: "/execute in gtocore:ganymede run tp 0 200 0"
 				elevate_perms: true
 				id: "1D27BEFA544DC7B3"
 				type: "command"
@@ -1806,7 +1806,7 @@
 			id: "03EB99A257E23BB0"
 			optional: true
 			rewards: [{
-				command: "/execute in kubejs:pluto run tp 0 200 0"
+				command: "/execute in gtocore:pluto run tp 0 200 0"
 				elevate_perms: true
 				id: "66072C4B76BF5F96"
 				type: "command"
@@ -1825,7 +1825,7 @@
 			id: "5F4A69C996774D27"
 			optional: true
 			rewards: [{
-				command: "/execute in kubejs:enceladus run tp 0 200 0"
+				command: "/execute in gtocore:enceladus run tp 0 200 0"
 				elevate_perms: true
 				id: "06FD20BA0DFAD74B"
 				type: "command"
@@ -1844,7 +1844,7 @@
 			id: "42E7589D84B33100"
 			optional: true
 			rewards: [{
-				command: "/execute in kubejs:titan run tp 0 200 0"
+				command: "/execute in gtocore:titan run tp 0 200 0"
 				elevate_perms: true
 				id: "5B3F450A220D031D"
 				type: "command"
@@ -1863,7 +1863,7 @@
 			id: "49CD5A099F2C481D"
 			optional: true
 			rewards: [{
-				command: "/execute in kubejs:barnarda run tp 0 200 0"
+				command: "/execute in gtocore:barnarda_c run tp 0 200 0"
 				elevate_perms: true
 				id: "088F8105E0E97885"
 				type: "command"
@@ -1898,7 +1898,7 @@
 		{
 			id: "2917E1F587244EAA"
 			tasks: [{
-				dimension: "kubejs:ancient_world"
+				dimension: "gtocore:ancient_world"
 				id: "0CECD4BAC6C3D2A4"
 				title: "远古世界"
 				type: "dimension"
@@ -1913,7 +1913,7 @@
 			id: "2A7DCD5C4BED8E3D"
 			optional: true
 			rewards: [{
-				command: "/execute in kubejs:ancient_world run tp 0 200 0"
+				command: "/execute in gtocore:ancient_world run tp 0 200 0"
 				elevate_perms: true
 				id: "22B3FCAD4E46DCCA"
 				type: "command"

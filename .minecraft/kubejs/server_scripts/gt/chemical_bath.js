@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:damascus_steel_dust")
         .EUt(120)
         .duration(200)
-        .dimension("kubejs:ancient_world")
+        .dimension("gtocore:ancient_world")
 
     gtr.chemical_bath("gtocore:leached_turpentine")
         .itemInputs("#minecraft:logs")

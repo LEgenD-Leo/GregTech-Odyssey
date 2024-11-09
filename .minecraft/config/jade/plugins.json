@@ -66,7 +66,6 @@
     "primitive_pump": true,
     "workable_provider": true,
     "transformer": true,
-    "mana_container_provider": true,
     "controllable_provider": true,
     "exhaust_vent_info": true,
     "me_pattern_buffer": true,
@@ -105,5 +104,8 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
+  },
+  "gtocore": {
+    "mana_container_provider": true
   }
 }

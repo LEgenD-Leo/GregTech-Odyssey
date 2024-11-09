@@ -20,7 +20,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.3)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("kubejs:ancient_world", "kubejs:ganymede")
+        vein.dimensions("gtocore:ancient_world", "gtocore:ganymede")
         vein.heightRangeUniform(30, 60)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -36,7 +36,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.2)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("kubejs:ancient_world", "kubejs:ganymede", "ad_astra:glacio")
+        vein.dimensions("gtocore:ancient_world", "gtocore:ganymede", "ad_astra:glacio")
         vein.heightRangeUniform(0, 30)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -52,7 +52,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.25)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("kubejs:ancient_world", "kubejs:pluto")
+        vein.dimensions("gtocore:ancient_world", "gtocore:pluto")
         vein.heightRangeUniform(30, 60)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -67,7 +67,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.25)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("kubejs:ancient_world", "kubejs:ganymede", "kubejs:barnarda")
+        vein.dimensions("gtocore:ancient_world", "gtocore:ganymede", "gtocore:barnarda_c")
         vein.heightRangeUniform(20, 60)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -82,7 +82,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.25)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("kubejs:ancient_world", "kubejs:ceres", "kubejs:barnarda")
+        vein.dimensions("gtocore:ancient_world", "gtocore:ceres", "gtocore:barnarda_c")
         vein.heightRangeUniform(10, 60)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -98,7 +98,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.75)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("kubejs:ancient_world")
+        vein.dimensions("gtocore:ancient_world")
         vein.heightRangeUniform(-20, 20)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -113,7 +113,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.75)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("kubejs:ancient_world", "kubejs:ceres", "ad_astra:glacio")
+        vein.dimensions("gtocore:ancient_world", "gtocore:ceres", "ad_astra:glacio")
         vein.heightRangeUniform(20, 50)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -130,7 +130,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.75)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("kubejs:ancient_world", "kubejs:titan", "ad_astra:glacio")
+        vein.dimensions("gtocore:ancient_world", "gtocore:titan", "ad_astra:glacio")
         vein.heightRangeUniform(5, 45)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -148,7 +148,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.3)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("ad_astra:moon", "kubejs:ganymede")
+        vein.dimensions("ad_astra:moon", "gtocore:ganymede")
         vein.heightRangeUniform(10, 70)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -164,7 +164,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.25)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("ad_astra:moon", "kubejs:ceres", "ad_astra:glacio")
+        vein.dimensions("ad_astra:moon", "gtocore:ceres", "ad_astra:glacio")
         vein.heightRangeUniform(20, 40)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -180,7 +180,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(1)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("ad_astra:moon", "kubejs:titan", "kubejs:pluto")
+        vein.dimensions("ad_astra:moon", "gtocore:titan", "gtocore:pluto")
         vein.heightRangeUniform(30, 60)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -190,13 +190,13 @@ GTCEuServerEvents.oreVeins(event => {
             )
         )
     })
-    event.add("kubejs:plutonium_vein_ad", vein => {
+    event.add("gtocore:plutonium_vein_ad", vein => {
         vein.weight(10)
         vein.clusterSize(40)
         vein.density(1)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("ad_astra:moon", "kubejs:pluto", "kubejs:barnarda")
+        vein.dimensions("ad_astra:moon", "gtocore:pluto", "gtocore:barnarda_c")
         vein.heightRangeUniform(30, 40)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -212,7 +212,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.25)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("ad_astra:mars", "kubejs:enceladus", "kubejs:barnarda")
+        vein.dimensions("ad_astra:mars", "gtocore:enceladus", "gtocore:barnarda_c")
         vein.heightRangeUniform(10, 80)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -228,7 +228,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.2)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("ad_astra:mars", "kubejs:enceladus", "ad_astra:glacio")
+        vein.dimensions("ad_astra:mars", "gtocore:enceladus", "ad_astra:glacio")
         vein.heightRangeUniform(5, 50)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -245,7 +245,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.7)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("ad_astra:mars", "ad_astra:glacio", "kubejs:barnarda")
+        vein.dimensions("ad_astra:mars", "ad_astra:glacio", "gtocore:barnarda_c")
         vein.heightRangeUniform(20, 60)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -261,7 +261,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.25)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("ad_astra:venus", "kubejs:io", "kubejs:enceladus")
+        vein.dimensions("ad_astra:venus", "gtocore:io", "gtocore:enceladus")
         vein.heightRangeUniform(-20, 10)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -278,7 +278,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.2)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("ad_astra:venus", "kubejs:titan")
+        vein.dimensions("ad_astra:venus", "gtocore:titan")
         vein.heightRangeUniform(10, 30)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -293,7 +293,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.3)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("ad_astra:venus", "kubejs:io", "kubejs:barnarda")
+        vein.dimensions("ad_astra:venus", "gtocore:io", "gtocore:barnarda_c")
         vein.heightRangeUniform(10, 30)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -325,7 +325,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.25)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("ad_astra:mercury", "kubejs:pluto")
+        vein.dimensions("ad_astra:mercury", "gtocore:pluto")
         vein.heightRangeUniform(-10, 60)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -342,7 +342,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.25)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("kubejs:ceres", "ad_astra:glacio")
+        vein.dimensions("gtocore:ceres", "ad_astra:glacio")
         vein.heightRangeUniform(0, 60)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -357,7 +357,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.25)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("kubejs:io", "kubejs:pluto", "kubejs:barnarda")
+        vein.dimensions("gtocore:io", "gtocore:pluto", "gtocore:barnarda_c")
         vein.heightRangeUniform(-10, 20)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -372,7 +372,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.25)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("kubejs:ganymede", "kubejs:titan")
+        vein.dimensions("gtocore:ganymede", "gtocore:titan")
         vein.heightRangeUniform(0, 20)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
@@ -389,7 +389,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.25)
         vein.discardChanceOnAirExposure(0)
         vein.layer("all_layer")
-        vein.dimensions("kubejs:io", "ad_astra:glacio")
+        vein.dimensions("gtocore:io", "ad_astra:glacio")
         vein.heightRangeUniform(10, 20)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern

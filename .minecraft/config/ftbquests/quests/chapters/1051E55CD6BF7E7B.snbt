@@ -71,7 +71,7 @@
 			description: ["未知之地"]
 			id: "1416EAE88C9030C8"
 			tasks: [{
-				dimension: "kubejs:create"
+				dimension: "gtocore:create"
 				id: "533527A60F7C2024"
 				type: "dimension"
 			}]

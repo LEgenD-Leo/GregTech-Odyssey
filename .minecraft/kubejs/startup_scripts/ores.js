@@ -35,35 +35,35 @@ GTCEuStartupEvents.registry("gtceu:tag_prefix", () => {
             BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(3.0, 3.0),
             new ResourceLocation("ad_astra:block/glacio_stone"))
 
-    TagPrefix.oreTagPrefix("titanstone", BlockTags.MINEABLE_WITH_PICKAXE)
-        .registerOre(() => Block.getBlock(GTOCore.id("titanstone")).defaultBlockState(), null,
+    TagPrefix.oreTagPrefix("titan_stone", BlockTags.MINEABLE_WITH_PICKAXE)
+        .registerOre(() => Block.getBlock(GTOCore.id("titan_stone")).defaultBlockState(), null,
             BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(3.0, 3.0),
-            GTOCore.id("block/titanstone"))
+            GTOCore.id("block/titan_stone"))
 
-    TagPrefix.oreTagPrefix("plutostone", BlockTags.MINEABLE_WITH_PICKAXE)
-        .registerOre(() => Block.getBlock(GTOCore.id("plutostone")).defaultBlockState(), null,
+    TagPrefix.oreTagPrefix("pluto_stone", BlockTags.MINEABLE_WITH_PICKAXE)
+        .registerOre(() => Block.getBlock(GTOCore.id("pluto_stone")).defaultBlockState(), null,
             BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(3.0, 3.0),
-            GTOCore.id("block/plutostone"))
+            GTOCore.id("block/pluto_stone"))
 
-    TagPrefix.oreTagPrefix("iostone", BlockTags.MINEABLE_WITH_PICKAXE)
-        .registerOre(() => Block.getBlock(GTOCore.id("iostone")).defaultBlockState(), null,
+    TagPrefix.oreTagPrefix("io_stone", BlockTags.MINEABLE_WITH_PICKAXE)
+        .registerOre(() => Block.getBlock(GTOCore.id("io_stone")).defaultBlockState(), null,
             BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(3.0, 3.0),
-            GTOCore.id("block/iostone"))
+            GTOCore.id("block/io_stone"))
 
-    TagPrefix.oreTagPrefix("ganymedestone", BlockTags.MINEABLE_WITH_PICKAXE)
-        .registerOre(() => Block.getBlock(GTOCore.id("ganymedestone")).defaultBlockState(), null,
+    TagPrefix.oreTagPrefix("ganymede_stone", BlockTags.MINEABLE_WITH_PICKAXE)
+        .registerOre(() => Block.getBlock(GTOCore.id("ganymede_stone")).defaultBlockState(), null,
             BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(3.0, 3.0),
-            GTOCore.id("block/ganymedestone"))
+            GTOCore.id("block/ganymede_stone"))
 
-    TagPrefix.oreTagPrefix("enceladusstone", BlockTags.MINEABLE_WITH_PICKAXE)
-        .registerOre(() => Block.getBlock(GTOCore.id("enceladusstone")).defaultBlockState(), null,
+    TagPrefix.oreTagPrefix("enceladus_stone", BlockTags.MINEABLE_WITH_PICKAXE)
+        .registerOre(() => Block.getBlock(GTOCore.id("enceladus_stone")).defaultBlockState(), null,
             BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(3.0, 3.0),
-            GTOCore.id("block/enceladusstone"))
+            GTOCore.id("block/enceladus_stone"))
 
-    TagPrefix.oreTagPrefix("ceresstone", BlockTags.MINEABLE_WITH_PICKAXE)
-        .registerOre(() => Block.getBlock(GTOCore.id("ceresstone")).defaultBlockState(), null,
+    TagPrefix.oreTagPrefix("ceres_stone", BlockTags.MINEABLE_WITH_PICKAXE)
+        .registerOre(() => Block.getBlock(GTOCore.id("ceres_stone")).defaultBlockState(), null,
             BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(3.0, 3.0),
-            GTOCore.id("block/ceresstone"))
+            GTOCore.id("block/ceres_stone"))
 })
 GTCEuStartupEvents.registry("gtceu:world_gen_layer", event => {
     event.create("all_layer")
@@ -75,26 +75,26 @@ GTCEuStartupEvents.registry("gtceu:world_gen_layer", event => {
             "ad_astra:venus_stone",
             "ad_astra:mercury_stone",
             "ad_astra:glacio_stone",
-            "gtocore:titanstone",
-            "gtocore:plutostone",
-            "gtocore:iostone",
-            "gtocore:ganymedestone",
-            "gtocore:enceladusstone",
-            "gtocore:ceresstone")
+            "gtocore:titan_stone",
+            "gtocore:pluto_stone",
+            "gtocore:io_stone",
+            "gtocore:ganymede_stone",
+            "gtocore:enceladus_stone",
+            "gtocore:ceres_stone")
         .dimensions("minecraft:overworld",
             "minecraft:the_nether",
             "minecraft:the_end",
-            "kubejs:ancient_world",
+            "gtocore:ancient_world",
             "ad_astra:moon",
             "ad_astra:mars",
             "ad_astra:venus",
             "ad_astra:mercury",
             "ad_astra:glacio",
-            "kubejs:titan",
-            "kubejs:pluto",
-            "kubejs:io",
-            "kubejs:ganymede",
-            "kubejs:enceladus",
-            "kubejs:ceres",
-            "kubejs:barnarda")
+            "gtocore:titan",
+            "gtocore:pluto",
+            "gtocore:io",
+            "gtocore:ganymede",
+            "gtocore:enceladus",
+            "gtocore:ceres",
+            "gtocore:barnarda_c")
 })

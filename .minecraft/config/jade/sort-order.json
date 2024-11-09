@@ -39,6 +39,7 @@
   "gtceu:transformer": null,
   "gtceu:workable_provider": null,
   "gtmthings:wireless_energy_hatch_provider": null,
+  "gtocore:mana_container_provider": null,
   "gtocore:parallel_info": null,
   "jade:block_face": null,
   "jade:distance": null,
