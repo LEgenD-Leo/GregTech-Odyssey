@@ -23,14 +23,14 @@ ServerEvents.recipes(event => {
     gtr.forming_press("gtocore:grindball_soapstone")
         .notConsumable("gtceu:ball_casting_mold")
         .itemInputs("16x gtceu:soapstone_dust", "2x gtceu:soldering_alloy_ingot")
-        .itemOutputs("kubejs:grindball_soapstone")
+        .itemOutputs("gtocore:grindball_soapstone")
         .EUt(GTValues.VA[GTValues.IV])
         .duration(800)
 
     gtr.forming_press("gtocore:grindball_aluminium")
         .notConsumable("gtceu:ball_casting_mold")
         .itemInputs("16x gtceu:aluminium_dust", "2x gtceu:soldering_alloy_ingot")
-        .itemOutputs("kubejs:grindball_aluminium")
+        .itemOutputs("gtocore:grindball_aluminium")
         .EUt(GTValues.VA[GTValues.IV])
         .duration(800)
 

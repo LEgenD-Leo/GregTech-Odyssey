@@ -1,30 +1,9 @@
 // priority: 98
 StartupEvents.registry("block", event => {
-    event.create("variation_wood", "basic")
-        .noValidSpawns(true)
-        .soundType("wood")
-        .mapColor("wood")
-        .textureAll("kubejs:block/variation_wood_top")
-        .texture("up", "kubejs:block/variation_wood_top")
-        .texture("down", "kubejs:block/variation_wood_top")
-        .texture("north", "kubejs:block/variation_wood")
-        .texture("south", "kubejs:block/variation_wood")
-        .texture("east", "kubejs:block/variation_wood")
-        .texture("west", "kubejs:block/variation_wood")
-
     event.create("diamond_compressed_block", "basic")
         .noValidSpawns(true)
         .soundType("stone")
         .mapColor("stone")
         .tagBlock("mineable/pickaxe")
         .textureAll("minecraft:block/diamond_block")
-
-})
-StartupEvents.registry("fluid", event => {
-    event.create("gelid_cryotheum")
-        .flowingTexture("kubejs:block/fluid/gelid_cryotheum_flow")
-        .stillTexture("kubejs:block/fluid/gelid_cryotheum")
-        .temperature(10)
-        .luminosity(8)
-        .bucketColor(0x2ab0fa)
 })

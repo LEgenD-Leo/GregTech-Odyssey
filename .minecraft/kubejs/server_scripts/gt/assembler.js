@@ -618,7 +618,7 @@ ServerEvents.recipes(event => {
 
     gtr.precision_assembler("gtocore:dyson_swarm_module")
         .itemInputs("16x gtceu:enriched_naquadah_frame", "64x gtceu:solar_panel", "gtceu:uev_sensor", "gtceu:uev_emitter")
-        .inputFluids("gtceu:mutated_living_solder 20000", "kubejs:gelid_cryotheum 20000", "gtceu:neutronium 18432", "gtceu:orichalcum 18432")
+        .inputFluids("gtceu:mutated_living_solder 20000", "gtocore:gelid_cryotheum 20000", "gtceu:neutronium 18432", "gtceu:orichalcum 18432")
         .itemOutputs("64x gtocore:dyson_swarm_module")
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(800)
@@ -634,7 +634,7 @@ ServerEvents.recipes(event => {
 
     gtr.precision_assembler("gtocore:dyson_receiver_casing")
         .itemInputs("gtceu:uiv_charger_4x", "2x gtocore:pm_chip", "4x gtocore:uiv_voltage_coil", "gtceu:echoite_quadruple_wire")
-        .inputFluids("gtceu:mutated_living_solder 1296", "kubejs:gelid_cryotheum 576", "gtceu:echo_shard 2304", "gtceu:infuscolium 1296")
+        .inputFluids("gtceu:mutated_living_solder 1296", "gtocore:gelid_cryotheum 576", "gtceu:echo_shard 2304", "gtceu:infuscolium 1296")
         .itemOutputs("gtocore:dyson_receiver_casing")
         .EUt(GTValues.VA[GTValues.UEV])
         .duration(400)

@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
 
     gtr.quantum_force_transformer("gtocore:radox_gas")
         .notConsumable("gtocore:quantum_anomaly")
-        .itemInputs("64x kubejs:variation_wood")
+        .itemInputs("64x gtocore:variation_wood")
         .inputFluids("gtceu:xenoxene 10000", "gtceu:unknowwater 90000", "gtceu:temporalfluid 100")
         .outputFluids("gtceu:radox_gas 100000")
         .EUt(GTValues.VA[GTValues.MAX])

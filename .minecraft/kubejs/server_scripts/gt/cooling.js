@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
         .duration(180)
 
     gtr.vacuum_freezer("gtocore:metastable_oganesson")
-        .inputFluids("gtceu:hot_oganesson 1000", "kubejs:gelid_cryotheum 144")
+        .inputFluids("gtceu:hot_oganesson 1000", "gtocore:gelid_cryotheum 144")
         .outputFluids("gtceu:metastable_oganesson 144")
         .itemOutputs("2x gtceu:small_enderium_dust")
         .EUt(GTValues.VA[GTValues.UV])

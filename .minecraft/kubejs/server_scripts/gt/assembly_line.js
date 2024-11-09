@@ -1756,7 +1756,7 @@ ServerEvents.recipes(event => {
             "64x gtocore:high_precision_crystal_soc",
             "64x gtceu:enderite_quadruple_wire",
             "64x gtceu:normal_optical_pipe")
-        .inputFluids("gtceu:mutated_living_solder 2880", "gtceu:vanadium_gallium 2880", "gtceu:pcb_coolant 16000", "kubejs:gelid_cryotheum 16000")
+        .inputFluids("gtceu:mutated_living_solder 2880", "gtceu:vanadium_gallium 2880", "gtceu:pcb_coolant 16000", "gtocore:gelid_cryotheum 16000")
         .itemOutputs("gtocore:super_computation")
         .EUt(GTValues.VA[GTValues.UEV])
         .duration(600)
@@ -1774,7 +1774,7 @@ ServerEvents.recipes(event => {
             "gtceu:data_orb",
             "gtocore:high_precision_crystal_soc",
             "4x gtceu:normal_optical_pipe")
-        .inputFluids("gtceu:soldering_alloy 576", "gtceu:vanadium_gallium 576", "gtceu:pcb_coolant 1000", "kubejs:gelid_cryotheum 1000")
+        .inputFluids("gtceu:soldering_alloy 576", "gtceu:vanadium_gallium 576", "gtceu:pcb_coolant 1000", "gtocore:gelid_cryotheum 1000")
         .itemOutputs("gtocore:super_computation_component")
         .EUt(GTValues.VA[GTValues.UHV])
         .duration(400)
@@ -1835,7 +1835,7 @@ ServerEvents.recipes(event => {
             "16x gtceu:naquadah_screw",
             "gtceu:zpm_fluid_regulator",
             "32x gtceu:fine_rhodium_wire")
-        .inputFluids("gtceu:soldering_alloy 576", "gtceu:vanadium_gallium 576", "gtceu:pcb_coolant 1000", "kubejs:gelid_cryotheum 1000")
+        .inputFluids("gtceu:soldering_alloy 576", "gtceu:vanadium_gallium 576", "gtceu:pcb_coolant 1000", "gtocore:gelid_cryotheum 1000")
         .itemOutputs("gtocore:super_cooler_component")
         .EUt(GTValues.VA[GTValues.UHV])
         .duration(400)
@@ -3642,7 +3642,7 @@ ServerEvents.recipes(event => {
             "64x minecraft:dispenser",
             "64x minecraft:dispenser",
             "64x minecraft:dispenser")
-        .inputFluids("gtceu:lubricant 48000", "gtceu:mutated_living_solder 12800", "kubejs:gelid_cryotheum 128000", "gtceu:copernicium 256000")
+        .inputFluids("gtceu:lubricant 48000", "gtceu:mutated_living_solder 12800", "gtocore:gelid_cryotheum 128000", "gtceu:copernicium 256000")
         .itemOutputs("gtocore:dyson_deployment_core")
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(1200)
@@ -3661,7 +3661,7 @@ ServerEvents.recipes(event => {
             "32x gtceu:echoite_hex_wire",
             "4x gtocore:uxv_voltage_coil",
             "16x gtceu:double_vibranium_plate")
-        .inputFluids("gtceu:mutated_living_solder 12000", "kubejs:gelid_cryotheum 12800", "gtceu:scandium 576000", "gtceu:mercury_barium_calcium_cuprate 576000")
+        .inputFluids("gtceu:mutated_living_solder 12000", "gtocore:gelid_cryotheum 12800", "gtceu:scandium 576000", "gtceu:mercury_barium_calcium_cuprate 576000")
         .itemOutputs("gtocore:dyson_sphere")
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(1600)
@@ -3677,7 +3677,7 @@ ServerEvents.recipes(event => {
             "gtceu:uhv_quantum_tank",
             "gtceu:uiv_conveyor_module",
             "4x gtceu:double_darmstadtium_plate")
-        .inputFluids("gtceu:mutated_living_solder 1000", "kubejs:gelid_cryotheum 1000", "gtceu:lubricant 2000", "gtceu:copernicium 1296")
+        .inputFluids("gtceu:mutated_living_solder 1000", "gtocore:gelid_cryotheum 1000", "gtceu:lubricant 2000", "gtceu:copernicium 1296")
         .itemOutputs("gtocore:dyson_deployment_casing")
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(600)
@@ -3694,7 +3694,7 @@ ServerEvents.recipes(event => {
             "gtocore:exotic_processing_core",
             "8x gtceu:infuscolium_bolt",
             "24x gtceu:neutronium_foil")
-        .inputFluids("gtceu:mutated_living_solder 2000", "kubejs:gelid_cryotheum 1000", "gtceu:zylon 1296", "gtceu:kevlar 1296")
+        .inputFluids("gtceu:mutated_living_solder 2000", "gtocore:gelid_cryotheum 1000", "gtceu:zylon 1296", "gtceu:kevlar 1296")
         .itemOutputs("gtocore:dyson_control_toroid")
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(800)

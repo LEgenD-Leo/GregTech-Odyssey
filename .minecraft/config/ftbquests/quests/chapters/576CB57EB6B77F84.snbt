@@ -817,7 +817,7 @@
 				}
 				{
 					id: "6D898C0C4CAC1D20"
-					item: "kubejs:gelid_cryotheum_bucket"
+					item: "gtocore:gelid_cryotheum_bucket"
 					type: "item"
 				}
 			]

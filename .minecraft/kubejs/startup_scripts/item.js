@@ -70,14 +70,6 @@ StartupEvents.registry("item", event => {
         .texture("gtceu:item/data_stick")
     event.create("non_linear_optical_lens")
         .texture("gtceu:item/yellow_glass_lens")
-    event.create("command_wand")
-        .unstackable()
-    event.create("grindball_soapstone")
-        .unstackable()
-        .maxDamage(50)
-    event.create("grindball_aluminium")
-        .unstackable()
-        .maxDamage(100)
 })
 ItemEvents.modification(event => {
     event.modify("gtceu:raw_coal", modification => {

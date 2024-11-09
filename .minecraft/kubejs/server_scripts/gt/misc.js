@@ -1066,7 +1066,7 @@ ServerEvents.recipes(event => {
 
     gtr.pyrolyse_oven("gtocore:rawradox")
         .inputFluids("gtceu:xenoxene 1000")
-        .itemInputs("16x kubejs:variation_wood")
+        .itemInputs("16x gtocore:variation_wood")
         .outputFluids("gtceu:rawradox 1000")
         .itemOutputs("gtceu:ash_dust")
         .circuit(1)
@@ -1075,7 +1075,7 @@ ServerEvents.recipes(event => {
 
     gtr.pyrolyse_oven("gtocore:rawradox1")
         .inputFluids("gtceu:enriched_xenoxene 1000")
-        .itemInputs("16x kubejs:variation_wood")
+        .itemInputs("16x gtocore:variation_wood")
         .outputFluids("gtceu:rawradox 10000")
         .itemOutputs("gtceu:ash_dust")
         .circuit(1)

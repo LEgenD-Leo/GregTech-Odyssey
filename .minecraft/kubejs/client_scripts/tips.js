@@ -1,5 +1,5 @@
 ItemEvents.tooltip(event => {
-    event.add("kubejs:command_wand", "需要左手拿着命令方块，且只能放在创造稳定核心上方")
+    event.add("gtocore:command_wand", "需要左手拿着命令方块，且只能放在创造稳定核心上方")
     event.add("minecraft:crimson_stem", "将橡木原木放置在转换室获得")
     event.add("minecraft:warped_stem", "将白桦木原木放置在转换室获得")
     event.add("minecraft:bone_block", "将钙块放置在转换室获得")

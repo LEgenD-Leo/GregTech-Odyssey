@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
 
     gtr.liquefaction_furnace("gtocore:gelid_cryotheum")
         .itemInputs("gtocore:dust_cryotheum")
-        .outputFluids("kubejs:gelid_cryotheum 144")
+        .outputFluids("gtocore:gelid_cryotheum 144")
         .EUt(GTValues.VA[GTValues.UV])
         .duration(80)
         .blastFurnaceTemp(300)

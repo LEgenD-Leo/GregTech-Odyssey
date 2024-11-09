@@ -184,7 +184,7 @@ ServerEvents.recipes(event => {
         .CWUt(512)
 
     gtr.dyson_sphere("gtocore:dysonsphere")
-        .inputFluids("kubejs:gelid_cryotheum 1")
+        .inputFluids("gtocore:gelid_cryotheum 1")
         .circuit(1)
         .EUt(-GTValues.V[GTValues.MAX])
         .duration(20)

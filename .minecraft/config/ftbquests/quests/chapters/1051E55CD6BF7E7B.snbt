@@ -141,7 +141,7 @@
 			id: "34DB07A64CD1439C"
 			tasks: [{
 				id: "7BD60E6DCA58004A"
-				item: "kubejs:command_wand"
+				item: "gtocore:command_wand"
 				type: "item"
 			}]
 			x: 3.0d

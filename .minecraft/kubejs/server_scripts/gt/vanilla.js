@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
         D: "minecraft:ender_pearl"
     })
 
-    event.shaped("kubejs:command_wand", [
+    event.shaped("gtocore:command_wand", [
         "  A",
         " B ",
         "B  "
