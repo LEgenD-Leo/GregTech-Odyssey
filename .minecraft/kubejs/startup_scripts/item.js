@@ -1,4 +1,3 @@
-// priority: 99
 ItemEvents.armorTierRegistry(event => {
     event.add("magneto_hydro_dynamically_con_strained_star_matter", tier => {
         tier.durabilityMultiplier = -1

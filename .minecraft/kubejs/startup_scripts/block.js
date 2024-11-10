@@ -1,4 +1,3 @@
-// priority: 98
 StartupEvents.registry("block", event => {
     event.create("diamond_compressed_block", "basic")
         .noValidSpawns(true)
