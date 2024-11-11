@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         F: "gtceu:double_steel_plate"
     })
 
-    gtr.lightning_processor("gtocore:ice_shard")
+    gtr.arc_generator("gtocore:ice_shard")
         .itemInputs("minecraft:blue_ice")
         .itemOutputs("ad_astra:ice_shard")
         .EUt(30)

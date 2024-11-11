@@ -20,6 +20,67 @@ ServerEvents.recipes(event => {
     event.smithing("kubejs:space_fermium_leggings", "ad_astra:netherite_space_pants", "kubejs:fermium_leggings", "ad_astra:oxygen_distributor")
     event.smithing("kubejs:space_fermium_boots", "ad_astra:netherite_space_boots", "kubejs:fermium_boots", "ad_astra:oxygen_distributor")
 
+    const world_data_scanner = [
+        ["lv", "gtceu:tin_single_cable"],
+        ["mv", "gtceu:copper_single_cable"],
+        ["hv", "gtceu:gold_single_cable"],
+        ["ev", "gtceu:aluminium_single_cable"],
+        ["iv", "gtceu:platinum_single_cable"],
+        ["luv", "gtceu:niobium_titanium_single_cable"],
+        ["zpm", "gtceu:vanadium_gallium_single_cable"],
+        ["uv", "gtceu:yttrium_barium_cuprate_single_cable"],
+        ["uhv", "gtceu:europium_single_cable"],
+        ["uev", "gtceu:mithril_single_cable"],
+        ["uiv", "gtceu:neutronium_single_cable"],
+        ["uxv", "gtceu:taranium_single_cable"],
+        ["opv", "gtceu:crystal_matrix_single_cable"]]
+    world_data_scanner.forEach((scanner) => {
+        event.shaped("gtocore:" + scanner[0] + "_world_data_scanner", [
+            "CDC",
+            "BAB",
+            "CDC"
+        ], {
+            A: "gtceu:" + scanner[0] + "_machine_hull",
+            B: scanner[1],
+            C: "gtceu:" + scanner[0] + "_sensor",
+            D: "#gtceu:circuits/" + scanner[0]
+        })
+    })
+
+    const machine_materials = [
+        ["uhv", "neutronium", "europium", "abyssalalloy", "uev", "1966080", "uv", "128", "gtocore:smd_diode_bioware"],
+        ["uev", "quantanium", "mithril", "titansteel", "uiv", "7864320", "uhv", "256", "gtocore:smd_diode_optical"],
+        ["uiv", "adamantium", "neutronium", "adamantine", "uxv", "31457280", "uev", "512", "gtocore:smd_diode_exotic"],
+        ["uxv", "vibranium", "taranium", "naquadriatictaranium", "opv", "125829120", "uiv", "1024", "gtocore:smd_diode_cosmic"],
+        ["opv", "draconium", "crystal_matrix", "starmetal", "max", "503316480", "uxv", "2048", "gtocore:smd_diode_supracausal"]
+    ]
+    machine_materials.forEach((machine_material) => {
+        event.shaped("gtceu:" + machine_material[0] + "_circuit_assembler", [
+            "ECF",
+            "DAD",
+            "BCB"
+        ], {
+            A: "gtceu:" + machine_material[0] + "_machine_hull",
+            B: "gtceu:" + machine_material[2] + "_single_cable",
+            C: "#gtceu:circuits/" + machine_material[4],
+            D: "gtceu:" + machine_material[0] + "_conveyor_module",
+            E: "gtceu:" + machine_material[0] + "_robot_arm",
+            F: "gtceu:" + machine_material[0] + "_emitter"
+        })
+
+        event.shaped("gtceu:" + machine_material[0] + "_scanner", [
+            "CEC",
+            "BAB",
+            "CDC"
+        ], {
+            A: "gtceu:" + machine_material[0] + "_machine_hull",
+            B: "gtceu:" + machine_material[2] + "_single_cable",
+            D: "gtceu:" + machine_material[0] + "_sensor",
+            C: "#gtceu:circuits/" + machine_material[0],
+            E: "gtceu:" + machine_material[0] + "_emitter"
+        })
+    })
+
     event.shaped("gtocore:warped_ender_pearl", [
         "ABA",
         "BDB",
@@ -67,7 +128,7 @@ ServerEvents.recipes(event => {
     ], {
         A: "gtocore:precision_steam_mechanism",
         B: "gtceu:stainless_steel_tiny_fluid_pipe",
-        C: "gtceu:iron_rotor",
+        C: "enderio:vibrant_crystal",
         D: "gtceu:steam_input_hatch"
     })
 
@@ -591,7 +652,7 @@ ServerEvents.recipes(event => {
         "DAD",
         "BCB"
     ], {
-        A: "gtceu:bronze_gearbox",
+        A: "gtocore:steam_separator",
         B: "gtceu:bronze_block",
         C: "gtocore:precision_steam_mechanism",
         D: "gtceu:small_iron_gear"
@@ -637,7 +698,7 @@ ServerEvents.recipes(event => {
         "DAD",
         "BCB"
     ], {
-        A: "gtceu:bronze_pipe_casing",
+        A: "gtocore:steam_separator",
         B: "gtceu:bronze_plate",
         C: "gtocore:precision_steam_mechanism",
         D: "gtceu:long_copper_rod"
@@ -653,6 +714,17 @@ ServerEvents.recipes(event => {
         C: "gtceu:double_bronze_plate",
         D: "gtocore:precision_steam_mechanism",
         E: "enderio:infinity_rod"
+    })
+
+    event.shaped("gtocore:steam_separator", [
+        "BCB",
+        "DAD",
+        "BCB"
+    ], {
+        A: "gtceu:bronze_gearbox",
+        B: "gtceu:bronze_block",
+        C: "gtceu:curved_bronze_plate",
+        D: "gtceu:small_iron_gear"
     })
 
     event.shaped("gtocore:steam_mixer", [
@@ -712,12 +784,12 @@ ServerEvents.recipes(event => {
 
     event.shaped("gtocore:precision_steam_mechanism", [
         "ABA",
-        "CDC",
+        "DCD",
         "EBE"
     ], {
         A: "gtceu:bronze_rod",
         B: "gtceu:small_bronze_gear",
-        C: "gtceu:bronze_plate",
+        C: "enderio:dark_bimetal_gear",
         D: "gtceu:small_copper_spring",
         E: "gtceu:bronze_tiny_fluid_pipe"
     })
@@ -1058,67 +1130,27 @@ ServerEvents.recipes(event => {
         A: "gtocore:vibrant_photovoltaic_block",
         B: "enderio:dark_steel_block",
         C: "#gtceu:circuits/ev",
-        D:"gtceu:tungsten_steel_plate"
+        D: "gtceu:tungsten_steel_plate"
     })
 
-    const world_data_scanner = [
-        ["lv", "gtceu:tin_single_cable"],
-        ["mv", "gtceu:copper_single_cable"],
-        ["hv", "gtceu:gold_single_cable"],
-        ["ev", "gtceu:aluminium_single_cable"],
-        ["iv", "gtceu:platinum_single_cable"],
-        ["luv", "gtceu:niobium_titanium_single_cable"],
-        ["zpm", "gtceu:vanadium_gallium_single_cable"],
-        ["uv", "gtceu:yttrium_barium_cuprate_single_cable"],
-        ["uhv", "gtceu:europium_single_cable"],
-        ["uev", "gtceu:mithril_single_cable"],
-        ["uiv", "gtceu:neutronium_single_cable"],
-        ["uxv", "gtceu:taranium_single_cable"],
-        ["opv", "gtceu:crystal_matrix_single_cable"]]
-    world_data_scanner.forEach((scanner) => {
-        event.shaped("gtocore:" + scanner[0] + "_world_data_scanner", [
-            "CDC",
-            "BAB",
-            "CDC"
-        ], {
-            A: "gtceu:" + scanner[0] + "_machine_hull",
-            B: scanner[1],
-            C: "gtceu:" + scanner[0] + "_sensor",
-            D: "#gtceu:circuits/" + scanner[0]
-        })
+    event.shaped("gtocore:heat_sensor", [
+        "CAC",
+        "ABA",
+        "CAC"
+    ], {
+        A: "minecraft:repeater",
+        C: "gtceu:steel_tiny_fluid_pipe",
+        B: "gtceu:lv_machine_casing"
     })
 
-    const machine_materials = [
-        ["uhv", "neutronium", "europium", "abyssalalloy", "uev", "1966080", "uv", "128", "gtocore:smd_diode_bioware"],
-        ["uev", "quantanium", "mithril", "titansteel", "uiv", "7864320", "uhv", "256", "gtocore:smd_diode_optical"],
-        ["uiv", "adamantium", "neutronium", "adamantine", "uxv", "31457280", "uev", "512", "gtocore:smd_diode_exotic"],
-        ["uxv", "vibranium", "taranium", "naquadriatictaranium", "opv", "125829120", "uiv", "1024", "gtocore:smd_diode_cosmic"],
-        ["opv", "draconium", "crystal_matrix", "starmetal", "max", "503316480", "uxv", "2048", "gtocore:smd_diode_supracausal"]
-    ]
-    machine_materials.forEach((machine_material) => {
-        event.shaped("gtceu:" + machine_material[0] + "_circuit_assembler", [
-            "ECF",
-            "DAD",
-            "BCB"
-        ], {
-            A: "gtceu:" + machine_material[0] + "_machine_hull",
-            B: "gtceu:" + machine_material[2] + "_single_cable",
-            C: "#gtceu:circuits/" + machine_material[4],
-            D: "gtceu:" + machine_material[0] + "_conveyor_module",
-            E: "gtceu:" + machine_material[0] + "_robot_arm",
-            F: "gtceu:" + machine_material[0] + "_emitter"
-        })
-
-        event.shaped("gtceu:" + machine_material[0] + "_scanner", [
-            "CEC",
-            "BAB",
-            "CDC"
-        ], {
-            A: "gtceu:" + machine_material[0] + "_machine_hull",
-            B: "gtceu:" + machine_material[2] + "_single_cable",
-            D: "gtceu:" + machine_material[0] + "_sensor",
-            C: "#gtceu:circuits/" + machine_material[0],
-            E: "gtceu:" + machine_material[0] + "_emitter"
-        })
+    event.shaped("gtocore:primitive_distillation_tower", [
+        "DCD",
+        "CAC",
+        "DBD"
+    ], {
+        A: "gtceu:hp_steam_solid_boiler",
+        B: "gtceu:potin_large_fluid_pipe",
+        C: "gtceu:lead_normal_fluid_pipe",
+        D: "gtceu:double_steel_plate"
     })
 })

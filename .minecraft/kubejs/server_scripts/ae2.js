@@ -389,14 +389,14 @@ ServerEvents.recipes((event) => {
         .EUt(GTValues.VA[GTValues.MAX] * 65536)
         .cleanroom(GTOCleanroomType.LAW_CLEANROOM)
 
-    gtr.lightning_processor("gtocore:charged_certus_quartz_crystal")
+    gtr.arc_generator("gtocore:charged_certus_quartz_crystal")
         .circuit(1)
         .itemInputs("ae2:certus_quartz_crystal")
         .itemOutputs("ae2:charged_certus_quartz_crystal")
         .EUt(30)
         .duration(60)
 
-    gtr.lightning_processor("gtocore:fluix_crystal")
+    gtr.arc_generator("gtocore:fluix_crystal")
         .circuit(2)
         .itemInputs("minecraft:redstone", "minecraft:quartz", "ae2:certus_quartz_crystal")
         .inputFluids("minecraft:water 1000")
@@ -404,7 +404,7 @@ ServerEvents.recipes((event) => {
         .EUt(30)
         .duration(80)
 
-    gtr.lightning_processor("gtocore:fluix_pearl")
+    gtr.arc_generator("gtocore:fluix_pearl")
         .itemInputs("minecraft:ender_pearl", "gtceu:flawless_fluix_gem")
         .itemOutputs("ae2:fluix_pearl")
         .EUt(30)

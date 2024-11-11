@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
 
     const gtr = event.recipes.gtceu
 
-    gtr.lightning_processor("gtocore:grains_of_infinity")
+    gtr.arc_generator("gtocore:grains_of_infinity")
         .chancedInput("minecraft:flint", 2000, 0)
         .itemInputs("gtceu:tiny_obsidian_dust")
         .itemOutputs("enderio:grains_of_infinity")
@@ -175,9 +175,9 @@ ServerEvents.recipes(event => {
         .EUt(30)
         .duration(120)
 
-    gtr.mixer("gtocore:energetic_alloy_dust")
+    gtr.arc_generator("gtocore:energetic_alloy_dust")
         .itemInputs("minecraft:redstone", "enderio:powdered_gold", "minecraft:glowstone_dust")
-        .circuit(3)
+        .inputFluids("minecraft:water 100")
         .itemOutputs("3x gtceu:energetic_alloy_dust")
         .EUt(30)
         .duration(480)

@@ -12,6 +12,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "sophisticatedbackpacks:void_upgrade" })
     event.remove({ id: "sophisticatedbackpacks:advanced_void_upgrade" })
     event.remove({ id: "sophisticatedbackpacks:pump_upgrade" })
+    event.remove({ id: "sophisticatedbackpacks:advanced_pump_upgrade" })
     event.remove({ id: "sophisticatedbackpacks:battery_upgrade" })
     event.remove({ id: "sophisticatedbackpacks:tank_upgrade" })
     event.remove({ id: "sophisticatedbackpacks:refill_upgrade" })

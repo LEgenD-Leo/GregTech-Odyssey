@@ -36,6 +36,11 @@
 	#Singularity default time required
 	#Range: > 0
 	"Singularity Time Required" = 240
+	#Does the right key cause infinity damage
+	"Is Sword Cause Endless damage" = true
+	#Growth soul farmland rate
+	#Range: 0.0 ~ 1.0
+	"Growth soul farmland rate" = 0.8
 
 [emc]
 	#Emc of Neutron Pile
@@ -44,4 +49,7 @@
 	#Emc of Totem Of Undying
 	#Range: > 0
 	"Vanilla Totem Emc" = 1000
+	#Emc of Blaze Cube
+	#Range: > 0
+	"Blaze Cube Emc" = 100
 
