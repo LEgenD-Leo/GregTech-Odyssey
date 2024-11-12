@@ -527,7 +527,7 @@ compat:
 
   # Whether to hide the ore processing diagrams in JEI
   # Default: false
-  hideOreProcessingDiagrams: true
+  hideOreProcessingDiagrams: false
 
   # Whether Gregtech should remove smelting recipes from the vanilla furnace for ingots requiring the Electric Blast Furnace.
   # Default: true
