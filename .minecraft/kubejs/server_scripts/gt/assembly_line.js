@@ -4172,17 +4172,6 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.OpV])
             .CWUt(1200))
 
-    gtr.assembly_line("gtocore:advanced_multi_smelter")
-        .itemInputs("4x gtceu:uhv_alloy_smelter", "16x gtocore:reaction_furnace", "16x gtceu:multi_smelter", "16x gtocore:liquefaction_furnace", "8x gtceu:duranium_quadruple_fluid_pipe", "4x #gtceu:circuits/uev", "8x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire", "8x gtceu:uhv_sensor", "4x gtocore:nm_chip", "16x gtceu:double_naquadah_plate")
-        .inputFluids("gtceu:soldering_alloy 2304", "gtceu:mutated_living_solder 2304")
-        .itemOutputs("gtocore:advanced_multi_smelter")
-        .EUt(GTValues.VA[GTValues.UHV])
-        .duration(1000)
-        .stationResearch(b => b.researchStack(Registries.getItemStack("gtceu:uhv_electric_furnace"))
-            .dataStack(Registries.getItemStack("gtceu:data_module"))
-            .EUt(GTValues.VA[GTValues.UEV])
-            .CWUt(512))
-
     gtr.assembly_line("gtocore:fuel_refining_complex")
         .itemInputs("4x gtceu:luv_mixer", "4x gtceu:luv_centrifuge", "4x gtceu:luv_distillery", "4x gtceu:luv_chemical_reactor", "8x gtceu:tungsten_carbide_nonuple_fluid_pipe", "4x gtceu:luv_emitter", "4x #gtceu:circuits/zpm", "8x gtceu:zpm_electric_pump", "16x gtceu:double_hsse_plate")
         .inputFluids("gtceu:soldering_alloy 2304", "gtceu:polytetrafluoroethylene 2304", "gtceu:watertight_steel 1152")
