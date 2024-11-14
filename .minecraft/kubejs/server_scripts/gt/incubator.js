@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
 
     overworld_ore.forEach((overworld) => {
         gtr.incubator("overworld_e_" + overworld[1])
-            .notConsumable("16x kubejs:overworld_data")
+            .notConsumable(Item.of("gtocore:dimension_data", `{dim:"minecraft:overworld"}`).weakNBT())
             .itemInputs("gtocore:essence_seed")
             .inputFluids("gtceu:biomass 10000", "gtceu:milk 10000")
             .itemInputs(overworld[0])
@@ -163,7 +163,7 @@ ServerEvents.recipes(event => {
 
     nether_ore.forEach((nether_) => {
         gtr.incubator("nether_e_" + nether_[1])
-            .notConsumable("32x kubejs:nether_data")
+            .notConsumable(Item.of("gtocore:dimension_data", `{dim:"minecraft:the_nether"}`).weakNBT())
             .itemInputs("gtocore:essence_seed")
             .inputFluids("gtceu:biomass 10000", "gtceu:milk 10000")
             .itemInputs(nether_[0])
@@ -200,7 +200,7 @@ ServerEvents.recipes(event => {
 
     end_ore.forEach((end) => {
         gtr.incubator("end_e_" + end[1])
-            .notConsumable("64x kubejs:end_data")
+            .notConsumable(Item.of("gtocore:dimension_data", `{dim:"minecraft:the_end"}`).weakNBT())
             .itemInputs("gtocore:essence_seed")
             .inputFluids("gtceu:biomass 10000", "gtceu:milk 10000")
             .itemInputs(end[0])
