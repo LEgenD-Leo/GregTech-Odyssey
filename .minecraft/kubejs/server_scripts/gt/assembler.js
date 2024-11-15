@@ -763,7 +763,7 @@ ServerEvents.recipes(event => {
 
     tiers.forEach(i => {
         gtr.assembler("gtocore:" + i[0] + "_neutron_accelerator")
-            .itemInputs("gtceu:" + i[0] + "_machine_hull", "gtocore:inverter", i[1] === 0 ? "2x gtceu:lead_rotor" : i[1] === 14 ? "2x gtocore:" + i[0] + "_electric_motor" : "2x gtceu:" + i[0] + "_electric_motor", "gtceu:double_beryllium_plate", "2x gtceu:polyvinyl_chloride_plate")
+            .itemInputs("gtceu:" + i[0] + "_machine_hull", "gtocore:inverter", i[1] === 0 || i[1] === 14 ? "2x gtocore:" + i[0] + "_electric_motor" : "2x gtceu:" + i[0] + "_electric_motor", "gtceu:double_beryllium_plate", "2x gtceu:polyvinyl_chloride_plate")
             .itemOutputs("gtocore:" + i[0] + "_neutron_accelerator")
             .inputFluids("gtceu:polonium 288")
             .EUt(30)

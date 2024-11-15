@@ -25,12 +25,6 @@ ServerEvents.recipes(event => {
         .EUt(16)
         .duration(1200)
 
-    gtr.compressor("gtocore:rubber_plate")
-        .itemInputs("2x gtceu:sticky_resin")
-        .itemOutputs("gtceu:rubber_plate")
-        .EUt(2)
-        .duration(100)
-
     gtr.compressor("gtocore:spacetime_block")
         .itemInputs("9x gtceu:spacetime_ingot")
         .itemOutputs("gtceu:spacetime_block")

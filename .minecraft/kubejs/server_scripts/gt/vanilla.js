@@ -390,7 +390,7 @@ ServerEvents.recipes(event => {
         C: "minecraft:repeating_command_block"
     })
 
-    event.shaped(Registries.getItemStack("gtocore:multi_functional_casing", 2), [
+    event.shaped("gtocore:multi_functional_casing", [
         "BCB",
         "DAD",
         "BCB"
@@ -579,7 +579,7 @@ ServerEvents.recipes(event => {
         A: "ae2:molecular_assembler",
         B: "gtceu:bronze_plate",
         C: "minecraft:comparator",
-        D: "#gtceu:circuits/ulv"
+        D: "gtocore:precision_steam_mechanism"
     })
 
     event.shaped("gtocore:large_steam_mixer", [
@@ -615,6 +615,18 @@ ServerEvents.recipes(event => {
         C: "gtceu:double_bronze_plate",
         D: "gtocore:precision_steam_mechanism",
         E: "enderio:infinity_rod"
+    })
+
+    event.shaped("gtocore:large_steam_crusher", [
+        "ECE",
+        "DAD",
+        "BCB"
+    ], {
+        A: "gtocore:steam_crusher",
+        B: "gtceu:cobalt_brass_gear",
+        C: "gtceu:diamond_gear",
+        D: "gtocore:precision_steam_mechanism",
+        E: "gtceu:curved_brass_plate"
     })
 
     event.shaped("gtocore:steam_separator", [
@@ -661,6 +673,28 @@ ServerEvents.recipes(event => {
         D: "gtceu:potin_gear"
     })
 
+    event.shaped("gtocore:steam_crusher", [
+        "ABA",
+        "BCB",
+        "DBD"
+    ], {
+        A: "minecraft:diamond",
+        B: "gtceu:small_bronze_gear",
+        C: "gtceu:hp_steam_macerator",
+        D: "gtceu:double_wrought_iron_plate"
+    })
+
+    event.shaped("gtocore:steam_cracker", [
+        "ABA",
+        "BCB",
+        "DBD"
+    ], {
+        A: "gtceu:tin_alloy_normal_fluid_pipe",
+        B: "gtceu:potin_quadruple_fluid_pipe",
+        C: "gtceu:hp_steam_alloy_smelter",
+        D: "gtocore:ulv_fluid_regulator"
+    })
+
     event.shaped("gtocore:weather_control", [
         "BCB",
         "DAD",
@@ -692,7 +726,7 @@ ServerEvents.recipes(event => {
         B: "gtceu:small_bronze_gear",
         C: "enderio:dark_bimetal_gear",
         D: "gtceu:small_copper_spring",
-        E: "gtceu:bronze_tiny_fluid_pipe"
+        E: "gtocore:ulv_fluid_regulator"
     })
 
     event.shaped("gtocore:steam_assembly_block", [
@@ -733,6 +767,19 @@ ServerEvents.recipes(event => {
         A: "gtceu:lapotronic_energy_orb_cluster",
         B: "gtceu:luv_transformer_16a",
         C: "gtceu:luv_machine_hull"
+    })
+
+    event.shaped("gtocore:ulv_semi_fluid", [
+        "ADA",
+        "BEB",
+        "CFC"
+    ], {
+        A: "gtocore:ulv_electric_piston",
+        B: "gtocore:ulv_electric_motor",
+        C: "gtceu:stone_gear",
+        D: "#gtceu:circuits/ulv",
+        E: "gtceu:ulv_machine_hull",
+        F: "gtceu:lead_double_cable"
     })
 
     event.shaped("gtocore:lv_semi_fluid", [
