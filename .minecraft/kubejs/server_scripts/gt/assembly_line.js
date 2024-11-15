@@ -3548,9 +3548,8 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UV])
             .CWUt(128))
 
-    gtr.assembly_line("gtocore:crystalline_infinity")
+    gtr.assembly_line("gtocore:crystal_builder")
         .itemInputs("4x gtceu:uev_autoclave",
-            "4x gtceu:uev_chemical_bath",
             "16x gtceu:uhv_emitter",
             "16x gtceu:uhv_electric_pump",
             "8x gtceu:adamantium_rotor",
@@ -3560,7 +3559,7 @@ ServerEvents.recipes(event => {
             "16x gtceu:double_indium_tin_barium_titanium_cuprate_plate",
             "32x gtceu:double_tritanium_plate")
         .inputFluids("gtceu:lanthanum 2304", "gtceu:cobalt_brass 5760", "gtceu:battery_alloy 5760", "gtceu:molybdenum_disilicide 1296")
-        .itemOutputs("gtocore:crystalline_infinity")
+        .itemOutputs("gtocore:crystal_builder")
         .EUt(GTValues.VA[GTValues.UEV])
         .duration(600)
         .stationResearch(b => b.researchStack(Registries.getItemStack("gtceu:large_autoclave"))

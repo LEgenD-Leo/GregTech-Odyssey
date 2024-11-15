@@ -1781,15 +1781,12 @@ ServerEvents.recipes(event => {
         .duration(400)
 
     gtr.assembler("gtocore:void_miner")
-        .itemInputs("gtceu:lv_miner",
-            "gtceu:mv_miner",
-            "gtceu:hv_miner",
-            "4x gtceu:lv_field_generator",
-            "4x gtceu:mv_field_generator",
-            "4x gtceu:hv_field_generator",
-            "4x #gtceu:circuits/ev",
-            "gtceu:long_titanium_rod",
-            "4x gtceu:titanium_plate")
+        .itemInputs("gtceu:hv_bedrock_ore_miner",
+            "4x gtceu:ev_field_generator",
+            "4x #gtceu:circuits/iv",
+            "2x gtceu:titanium_gear",
+            "2x gtceu:long_titanium_rod",
+            "8x gtceu:titanium_plate")
         .inputFluids("gtceu:soldering_alloy 1440")
         .itemOutputs("gtocore:void_miner")
         .EUt(GTValues.VA[GTValues.HV])

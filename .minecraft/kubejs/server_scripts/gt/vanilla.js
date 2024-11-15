@@ -20,33 +20,6 @@ ServerEvents.recipes(event => {
     event.smithing("kubejs:space_fermium_leggings", "ad_astra:netherite_space_pants", "kubejs:fermium_leggings", "ad_astra:oxygen_distributor")
     event.smithing("kubejs:space_fermium_boots", "ad_astra:netherite_space_boots", "kubejs:fermium_boots", "ad_astra:oxygen_distributor")
 
-    const world_data_scanner = [
-        ["lv", "gtceu:tin_single_cable"],
-        ["mv", "gtceu:copper_single_cable"],
-        ["hv", "gtceu:gold_single_cable"],
-        ["ev", "gtceu:aluminium_single_cable"],
-        ["iv", "gtceu:platinum_single_cable"],
-        ["luv", "gtceu:niobium_titanium_single_cable"],
-        ["zpm", "gtceu:vanadium_gallium_single_cable"],
-        ["uv", "gtceu:yttrium_barium_cuprate_single_cable"],
-        ["uhv", "gtceu:europium_single_cable"],
-        ["uev", "gtceu:mithril_single_cable"],
-        ["uiv", "gtceu:neutronium_single_cable"],
-        ["uxv", "gtceu:taranium_single_cable"],
-        ["opv", "gtceu:crystal_matrix_single_cable"]]
-    world_data_scanner.forEach((scanner) => {
-        event.shaped("gtocore:" + scanner[0] + "_world_data_scanner", [
-            "CDC",
-            "BAB",
-            "CDC"
-        ], {
-            A: "gtceu:" + scanner[0] + "_machine_hull",
-            B: scanner[1],
-            C: "gtceu:" + scanner[0] + "_sensor",
-            D: "#gtceu:circuits/" + scanner[0]
-        })
-    })
-
     const machine_materials = [
         ["uhv", "neutronium", "europium", "abyssalalloy", "uev", "1966080", "uv", "128", "gtocore:smd_diode_bioware"],
         ["uev", "quantanium", "mithril", "titansteel", "uiv", "7864320", "uhv", "256", "gtocore:smd_diode_optical"],
@@ -266,78 +239,6 @@ ServerEvents.recipes(event => {
         C: "#gtceu:circuits/max",
         D: "gtocore:max_electric_piston",
         E: "gtocore:max_electric_pump"
-    })
-
-    event.shaped("gtceu:uhv_parallel_hatch", [
-        "DCE",
-        "CAC",
-        "BCB"
-    ], {
-        A: "gtceu:uhv_machine_hull",
-        B: "gtceu:europium_double_cable",
-        C: "#gtceu:circuits/uev",
-        D: "gtceu:uhv_sensor",
-        E: "gtceu:uhv_emitter"
-    })
-
-    event.shaped("gtceu:uev_parallel_hatch", [
-        "DCE",
-        "CAC",
-        "BCB"
-    ], {
-        A: "gtceu:uev_machine_hull",
-        B: "gtceu:mithril_double_cable",
-        C: "#gtceu:circuits/uiv",
-        D: "gtceu:uev_sensor",
-        E: "gtceu:uev_emitter"
-    })
-
-    event.shaped("gtceu:uiv_parallel_hatch", [
-        "DCE",
-        "CAC",
-        "BCB"
-    ], {
-        A: "gtceu:uiv_machine_hull",
-        B: "gtceu:neutronium_double_cable",
-        C: "#gtceu:circuits/uxv",
-        D: "gtceu:uiv_sensor",
-        E: "gtceu:uiv_emitter"
-    })
-
-    event.shaped("gtceu:uxv_parallel_hatch", [
-        "DCE",
-        "CAC",
-        "BCB"
-    ], {
-        A: "gtceu:uxv_machine_hull",
-        B: "gtceu:taranium_double_cable",
-        C: "#gtceu:circuits/opv",
-        D: "gtceu:uxv_sensor",
-        E: "gtceu:uxv_emitter"
-    })
-
-    event.shaped("gtceu:opv_parallel_hatch", [
-        "DCE",
-        "CAC",
-        "BCB"
-    ], {
-        A: "gtceu:opv_machine_hull",
-        B: "gtceu:crystal_matrix_double_cable",
-        C: "#gtceu:circuits/max",
-        D: "gtceu:opv_sensor",
-        E: "gtceu:opv_emitter"
-    })
-
-    event.shaped("gtceu:max_parallel_hatch", [
-        "DCE",
-        "CAC",
-        "BCB"
-    ], {
-        A: "gtceu:max_machine_hull",
-        B: "gtceu:cosmic_neutronium_double_cable",
-        C: "gtocore:suprachronal_circuit_max",
-        D: "gtocore:max_sensor",
-        E: "gtocore:max_emitter"
     })
 
     event.shaped("gtocore:sterile_cleaning_maintenance_hatch", [
