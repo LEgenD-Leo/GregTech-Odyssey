@@ -13,6 +13,8 @@
 .minecraft/coremods/
 .minecraft/server-resource-packs/
 .minecraft/texturepacks/
+.minecraft/simplebackups/
+.minecraft/xaero*/
 .minecraft/log4j2.xml
 .minecraft/servers.dat
 .minecraft/rhino.local.properties
