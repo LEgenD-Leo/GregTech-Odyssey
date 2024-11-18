@@ -4,7 +4,6 @@ ItemEvents.armorTierRegistry(event => {
         tier.slotProtections = [0, 0, 0, 0]
         tier.enchantmentValue = 10
         tier.equipSound = "minecraft:item.armor.equip_iron"
-        tier.repairIngredient = "#forge:ingots/magneto_hydro_dynamically_con_strained_star_matter"
         tier.toughness = 0
         tier.knockbackResistance = 10
     })

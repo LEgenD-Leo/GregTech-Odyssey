@@ -30,11 +30,11 @@ ServerEvents.recipes((event) => {
         "ACP",
         "SP "
     ], {
-        W: "#forge:fine_wires/red_alloy",
-        P: "#forge:plates/stainless_steel",
+        W: "gtceu:fine_red_alloy_wire",
+        P: "gtceu:stainless_steel_plate",
         A: "ae2:engineering_processor",
         C: "#gtceu:circuits/hv",
-        S: "#forge:fine_wires/silver",
+        S: "gtceu:fine_silver_wire"
     })
 
     event.shaped("2x ae2:basic_card", [
@@ -42,11 +42,11 @@ ServerEvents.recipes((event) => {
         "ACP",
         "SP "
     ], {
-        W: "#forge:fine_wires/red_alloy",
-        P: "#forge:plates/aluminium",
+        W: "gtceu:fine_red_alloy_wire",
+        P: "gtceu:aluminium_plate",
         A: "ae2:engineering_processor",
         C: "#gtceu:circuits/mv",
-        S: "#forge:fine_wires/gold",
+        S: "gtceu:fine_gold_wire"
     })
 
     event.shaped("ae2:annihilation_core", [
@@ -54,7 +54,7 @@ ServerEvents.recipes((event) => {
     ], {
         C: "#gtceu:circuits/ulv",
         P: "ae2:logic_processor",
-        B: "#forge:dusts/nether_quartz",
+        B: "gtceu:nether_quartz_dust",
     })
 
     event.shaped("ae2:formation_core", [
@@ -62,7 +62,7 @@ ServerEvents.recipes((event) => {
     ], {
         C: "#gtceu:circuits/ulv",
         P: "ae2:logic_processor",
-        B: "#forge:dusts/certus_quartz",
+        B: "ae2:certus_quartz_dust",
     })
 
     event.shaped("ae2:wireless_receiver", [
@@ -72,7 +72,7 @@ ServerEvents.recipes((event) => {
     ], {
         C: "#gtceu:circuits/ev",
         P: "ae2:fluix_pearl",
-        R: "#forge:rods/titanium",
+        R: "gtceu:curved_titanium_plate",
         S: "gtceu:hv_sensor",
     })
 
@@ -93,7 +93,7 @@ ServerEvents.recipes((event) => {
     gtr.forming_press("gtocore:logic_processor")
         .notConsumable("ae2:silicon_press")
         .notConsumable("ae2:logic_processor_press")
-        .itemInputs("#forge:plates/gold", "ae2:silicon", "#forge:plates/redstone")
+        .itemInputs("gtceu:gold_plate", "ae2:silicon","gtceu:redstone_plate")
         .itemOutputs("ae2:logic_processor")
         .duration(200)
         .EUt(30)
@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
     gtr.forming_press("gtocore:calculation_processor")
         .notConsumable("ae2:silicon_press")
         .notConsumable("ae2:calculation_processor_press")
-        .itemInputs("#forge:plates/certus_quartz", "ae2:silicon", "#forge:plates/redstone")
+        .itemInputs("gtceu:certus_quartz_plate", "ae2:silicon","gtceu:redstone_plate")
         .itemOutputs("ae2:calculation_processor")
         .duration(200)
         .EUt(30)
@@ -125,7 +125,7 @@ ServerEvents.recipes((event) => {
     gtr.forming_press("gtocore:engineering_processor1")
         .notConsumable("ae2:silicon_press")
         .notConsumable("ae2:engineering_processor_press")
-        .itemInputs("#forge:plates/diamond", "ae2:silicon", "#forge:plates/redstone")
+        .itemInputs("gtceu:diamond_plate", "ae2:silicon", "gtceu:redstone_plate")
         .itemOutputs("ae2:engineering_processor")
         .duration(200)
         .EUt(30)
@@ -139,7 +139,7 @@ ServerEvents.recipes((event) => {
         .EUt(480)
 
     gtr.mixer("gtocore:fluix_dust")
-        .itemInputs("#forge:dusts/nether_quartz", "#forge:dusts/certus_quartz", "#forge:dusts/redstone")
+        .itemInputs("gtceu:nether_quartz_dust","ae2:certus_quartz_dust","minecraft:redstone")
         .itemOutputs("3x ae2:fluix_dust")
         .duration(200)
         .EUt(16)
@@ -179,10 +179,10 @@ ServerEvents.recipes((event) => {
 
     gtr.assembler("gtocore:blank_pattern")
         .itemInputs(
-            "3x #forge:plates/steel",
-            "2x #forge:plates/polyethylene",
-            "4x #forge:fine_wires/red_alloy",
-            "#gtceu:circuits/mv")
+            "3x ad_astra:steel_plate",
+            "2x gtceu:polyethylene_plate",
+            "4x gtceu:red_alloy_plate",
+            "#gtceu:circuits/hv")
         .itemOutputs("ae2:blank_pattern")
         .inputFluids("gtceu:glass 144")
         .duration(200)
@@ -190,10 +190,10 @@ ServerEvents.recipes((event) => {
 
     gtr.assembler("gtocore:blank_pattern_good")
         .itemInputs(
-            "3x #forge:plates/steel",
-            "2x #forge:plates/polyvinyl_chloride",
-            "4x #forge:fine_wires/red_alloy",
-            "#gtceu:circuits/mv")
+            "3x ad_astra:steel_plate",
+            "2x gtceu:polyvinyl_chloride_plate",
+            "4x gtceu:red_alloy_plate",
+            "#gtceu:circuits/ev")
         .itemOutputs("4x ae2:blank_pattern")
         .inputFluids("gtceu:glass 288")
         .duration(200)
@@ -201,10 +201,10 @@ ServerEvents.recipes((event) => {
 
     gtr.assembler("gtocore:blank_pattern_better")
         .itemInputs(
-            "3x #forge:plates/steel",
-            "2x #forge:plates/polytetrafluoroethylene",
-            "4x #forge:fine_wires/red_alloy",
-            "#gtceu:circuits/mv")
+            "3x ad_astra:steel_plate",
+            "2x gtceu:polytetrafluoroethylene_plate",
+            "4x gtceu:red_alloy_plate",
+            "#gtceu:circuits/iv")
         .itemOutputs("16x ae2:blank_pattern")
         .inputFluids("gtceu:glass 576")
         .duration(200)
@@ -212,10 +212,10 @@ ServerEvents.recipes((event) => {
 
     gtr.assembler("gtocore:blank_pattern_best")
         .itemInputs(
-            "3x #forge:plates/steel",
-            "2x #forge:plates/polybenzimidazole",
-            "4x #forge:fine_wires/red_alloy",
-            "#gtceu:circuits/mv")
+            "3x ad_astra:steel_plate",
+            "2x gtceu:polybenzimidazole_plate",
+            "4x gtceu:red_alloy_plate",
+            "#gtceu:circuits/luv")
         .itemOutputs("64x ae2:blank_pattern")
         .inputFluids("gtceu:glass 1152")
         .duration(200)

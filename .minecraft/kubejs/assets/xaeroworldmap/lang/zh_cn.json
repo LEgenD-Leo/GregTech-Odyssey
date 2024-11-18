@@ -154,7 +154,7 @@
   "gui.xaero_wm_pac_claims_border_opacity": "领地边界不透明度",
   "gui.xaero_wm_pac_claims_fill_opacity": "领地填充不透明度",
   "gui.xaero_wm_pac_expired_claim_tooltip": "过期的领地 %1$s",
-  "gui.xaero_wm_pac_marked_for_forceload": " （可强制加载）",
+  "gui.xaero_wm_pac_marked_for_forceload": "（强制加载）",
   "gui.xaero_wm_pac_player_teleport_command": "玩家传送命令",
   "gui.xaero_wm_pac_server_claim_tooltip": "服务器领地 %1$s",
   "gui.xaero_wm_partial_y_teleportation": "传送时使用偏移的Y坐标",

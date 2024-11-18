@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         .duration(200)
 
     gtr.chemical_bath("gtocore:ash_leaching_solution")
-        .itemInputs("12x #forge:dusts/ash")
+        .itemInputs("12x gtceu:ash_dust")
         .inputFluids("gtceu:sulfuric_acid 1000")
         .outputFluids("gtceu:ash_leaching_solution 1000")
         .EUt(120)

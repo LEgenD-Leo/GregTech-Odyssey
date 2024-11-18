@@ -1,21 +1,6 @@
 //priority: 100
 const tiers = [["ulv", 0], ["lv", 1], ["mv", 2], ["hv", 3], ["ev", 4], ["iv", 5], ["luv", 6], ["zpm", 7], ["uv", 8], ["uhv", 9], ["uev", 10], ["uiv", 11], ["uxv", 12], ["opv", 13], ["max", 14]]
 ServerEvents.tags("item", event => {
-    const items = [
-        "appflux:redstone_crystal",
-        "ad_astra:iron_plate",
-        "ad_astra:iron_rod",
-        "ad_astra:steel_ingot",
-        "ad_astra:steel_nugget",
-        "ad_astra:steel_plate",
-        "ad_astra:steel_rod",
-        "ad_astra:steel_block"
-    ]
-    items.forEach((item) => {
-        event.removeAllTagsFrom(item)
-    })
-
-    //space_suit
     const space_suit_items = ["ad_astra:netherite_space_suit_items",
         "ad_astra:freeze_resistant_armor",
         "ad_astra:heat_resistant_armor",

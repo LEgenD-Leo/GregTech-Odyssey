@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
         .addData("component_assembly_line_casing_tier", 1)
 
     gtr.component_assembly_line("gtocore:lv_field_generator")
-        .itemInputs("96x #gtceu:circuits/lv", "96x gtceu:steel_plate", "48x minecraft:ender_pearl")
+        .itemInputs("96x #gtceu:circuits/lv", "96x ad_astra:steel_plate", "48x minecraft:ender_pearl")
         .inputFluids("gtceu:manganese_phosphide 55296")
         .itemOutputs("64x gtceu:lv_field_generator")
         .EUt(GTValues.VA[GTValues.LV])
@@ -1685,7 +1685,7 @@ ServerEvents.recipes(event => {
 
         gtr.assembly_line("gtocore:" + machine_material[0] + "_energy_output_hatch")
             .itemInputs("gtceu:" + machine_material[0] + "_machine_hull",
-                "4x #forge:springs/" + machine_material[1],
+                "4x gtceu:" + machine_material[1]+"_spring",
                 "2x " + machine_material[5],
                 "#gtceu:circuits/" + machine_material[0],
                 "2x gtocore:" + machine_material[0] + "_voltage_coil")
@@ -2985,8 +2985,8 @@ ServerEvents.recipes(event => {
                 "4x gtceu:long_" + parts_material[9] + "_rod",
                 "4x gtceu:" + parts_material[9] + "_ring",
                 "8x gtceu:" + parts_material[9] + "_round",
-                "64x #forge:fine_wires/" + parts_material[3],
-                "64x #forge:fine_wires/" + parts_material[3],
+                "64x gtceu:fine_" + parts_material[3]+"_wire",
+                "64x gtceu:fine_" + parts_material[3]+"_wire",
                 "2x gtceu:curved_" + parts_material[9] + "_plate")
             .inputFluids("gtceu:mutated_living_solder " + 500 * parts_material[1], "gtceu:soldering_alloy " + 1000 * parts_material[1], "gtceu:lubricant " + 2000 * parts_material[1], parts_material[13])
             .itemOutputs("gtceu:" + parts_material[0] + "_electric_motor")
@@ -3074,8 +3074,8 @@ ServerEvents.recipes(event => {
                 "4x gtceu:long_" + parts_material[9] + "_rod",
                 parts_material[10],
                 "2x #gtceu:circuits/" + parts_material[0],
-                "64x #forge:foils/" + parts_material[3],
-                "64x #forge:foils/" + parts_material[12],
+                "64x gtceu:" + parts_material[3]+"_foil",
+                "64x gtceu:" + parts_material[12]+"_foil",
                 "4x gtceu:" + parts_material[2] + "_single_cable")
             .inputFluids("gtceu:mutated_living_solder " + 1152 * parts_material[1], "gtceu:soldering_alloy " + 2304 * parts_material[1], parts_material[13])
             .itemOutputs("gtceu:" + parts_material[0] + "_emitter")
@@ -3092,8 +3092,8 @@ ServerEvents.recipes(event => {
                 "4x gtceu:" + parts_material[9] + "_plate",
                 parts_material[10],
                 "2x #gtceu:circuits/" + parts_material[0],
-                "64x #forge:foils/" + parts_material[3],
-                "64x #forge:foils/" + parts_material[12],
+                "64x gtceu:" + parts_material[3]+"_foil",
+                "64x gtceu:" + parts_material[12]+"_foil",
                 "4x gtceu:" + parts_material[2] + "_single_cable")
             .inputFluids("gtceu:mutated_living_solder " + 1152 * parts_material[1], "gtceu:soldering_alloy " + 2304 * parts_material[1], parts_material[13])
             .itemOutputs("gtceu:" + parts_material[0] + "_sensor")
@@ -3110,8 +3110,8 @@ ServerEvents.recipes(event => {
                 parts_material[10],
                 "2x gtceu:" + parts_material[0] + "_emitter",
                 "2x #gtceu:circuits/" + parts_material[0],
-                "64x #forge:fine_wires/" + parts_material[8],
-                "64x #forge:fine_wires/" + parts_material[8],
+                "64x gtceu:fine_" + parts_material[8]+"_wire",
+                "64x gtceu:fine_" + parts_material[8]+"_wire",
                 "4x gtceu:" + parts_material[2] + "_single_cable")
             .inputFluids("gtceu:mutated_living_solder " + 1152 * parts_material[1], "gtceu:soldering_alloy " + 2304 * parts_material[1], parts_material[13])
             .itemOutputs("gtceu:" + parts_material[0] + "_field_generator")
@@ -3141,8 +3141,8 @@ ServerEvents.recipes(event => {
                 "4x gtceu:long_" + parts_material[9] + "_rod",
                 "4x gtceu:" + parts_material[9] + "_ring",
                 "8x gtceu:" + parts_material[9] + "_round",
-                "64x #forge:fine_wires/" + parts_material[3],
-                "64x #forge:fine_wires/" + parts_material[3],
+                "64x gtceu:fine_" + parts_material[3]+"_wire",
+                "64x gtceu:fine_" + parts_material[3]+"_wire",
                 "2x gtceu:curved_" + parts_material[9] + "_plate")
             .inputFluids("gtceu:super_mutated_living_solder " + 500 * parts_material[1], "gtceu:soldering_alloy " + 1000 * parts_material[1], "gtceu:lubricant " + 2000 * parts_material[1], parts_material[13])
             .itemOutputs("gtceu:" + parts_material[0] + "_electric_motor")
@@ -3230,8 +3230,8 @@ ServerEvents.recipes(event => {
                 "4x gtceu:long_" + parts_material[9] + "_rod",
                 parts_material[10],
                 "2x #gtceu:circuits/" + parts_material[0],
-                "64x #forge:foils/" + parts_material[3],
-                "64x #forge:foils/" + parts_material[12],
+                "64x gtceu:" + parts_material[3]+"_foil",
+                "64x gtceu:" + parts_material[12]+"_foil",
                 "4x gtceu:" + parts_material[2] + "_single_cable")
             .inputFluids("gtceu:super_mutated_living_solder " + 1152 * parts_material[1], "gtceu:soldering_alloy " + 2304 * parts_material[1], parts_material[13])
             .itemOutputs("gtceu:" + parts_material[0] + "_emitter")
@@ -3248,8 +3248,8 @@ ServerEvents.recipes(event => {
                 "4x gtceu:" + parts_material[9] + "_plate",
                 parts_material[10],
                 "2x #gtceu:circuits/" + parts_material[0],
-                "64x #forge:foils/" + parts_material[3],
-                "64x #forge:foils/" + parts_material[12],
+                "64x gtceu:" + parts_material[3]+"_foil",
+                "64x gtceu:" + parts_material[12]+"_foil",
                 "4x gtceu:" + parts_material[2] + "_single_cable")
             .inputFluids("gtceu:super_mutated_living_solder " + 1152 * parts_material[1], "gtceu:soldering_alloy " + 2304 * parts_material[1], parts_material[13])
             .itemOutputs("gtceu:" + parts_material[0] + "_sensor")
@@ -3266,8 +3266,8 @@ ServerEvents.recipes(event => {
                 parts_material[10],
                 "2x gtceu:" + parts_material[0] + "_emitter",
                 "2x #gtceu:circuits/" + parts_material[0],
-                "64x #forge:fine_wires/" + parts_material[8],
-                "64x #forge:fine_wires/" + parts_material[8],
+                "64x gtceu:fine_" + parts_material[8]+"_wire",
+                "64x gtceu:fine_" + parts_material[8]+"_wire",
                 "4x gtceu:" + parts_material[2] + "_single_cable")
             .inputFluids("gtceu:super_mutated_living_solder " + 1152 * parts_material[1], "gtceu:soldering_alloy " + 2304 * parts_material[1], parts_material[13])
             .itemOutputs("gtceu:" + parts_material[0] + "_field_generator")

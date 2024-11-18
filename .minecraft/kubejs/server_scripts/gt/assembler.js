@@ -705,7 +705,7 @@ ServerEvents.recipes(event => {
     ]
     coils.forEach((coil) => {
         gtr.assembler("gtocore:" + coil[0] + "_voltage_coil")
-            .itemInputs("gtocore:magnetic_netherite_rod", "16x #forge:fine_wires/" + coil[2])
+            .itemInputs("gtocore:magnetic_netherite_rod", "16x gtceu:fine_" + coil[2]+"_wire")
             .itemOutputs("gtocore:" + coil[0] + "_voltage_coil")
             .EUt(coil[1])
             .duration(200)
@@ -724,7 +724,7 @@ ServerEvents.recipes(event => {
     ]
     coilas.forEach((coil) => {
         gtr.assembler("gtocore:" + coil[0] + "_voltage_coil")
-            .itemInputs("gtceu:attuned_tengam_rod", "16x #forge:fine_wires/" + coil[2])
+            .itemInputs("gtceu:attuned_tengam_rod",  "16x gtceu:fine_" + coil[2]+"_wire")
             .itemOutputs("gtocore:" + coil[0] + "_voltage_coil")
             .EUt(coil[1])
             .duration(200)
@@ -737,7 +737,7 @@ ServerEvents.recipes(event => {
             .duration(800)
     })
     gtr.assembler("gtocore:max_voltage_coil")
-        .itemInputs("gtceu:attuned_tengam_rod", "16x #forge:fine_wires/cosmic_neutronium")
+        .itemInputs("gtceu:attuned_tengam_rod", "16x gtceu:fine_cosmic_neutronium_wire")
         .itemOutputs("gtocore:max_voltage_coil")
         .EUt(2013265920)
         .duration(200)
@@ -1330,7 +1330,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.CLEANROOM)
 
     gtr.assembler("gtocore:electron_source")
-        .itemInputs("gtceu:mendelevium_plate", "gtceu:radium_dust", "6x gtceu:polyetheretherketone_plate", "4x gtceu:polybenzimidazole_plate", "4x gtceu:steel_plate")
+        .itemInputs("gtceu:mendelevium_plate", "gtceu:radium_dust", "6x gtceu:polyetheretherketone_plate", "4x gtceu:polybenzimidazole_plate", "4x ad_astra:steel_plate")
         .inputFluids("gtceu:soldering_alloy 144")
         .itemOutputs("gtocore:electron_source")
         .EUt(750000)
@@ -1431,7 +1431,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.CLEANROOM)
 
     gtr.assembler("gtocore:empty_laser_cooling_container")
-        .itemInputs("8x gtceu:steel_plate", "gtocore:laser_cooling_unit", "gtocore:magnetic_trap", "2x gtceu:double_magnalium_plate")
+        .itemInputs("8x ad_astra:steel_plate", "gtocore:laser_cooling_unit", "gtocore:magnetic_trap", "2x gtceu:double_magnalium_plate")
         .itemOutputs("gtocore:empty_laser_cooling_container")
         .inputFluids("gtceu:soldering_alloy 144")
         .EUt(1150000)
@@ -1973,7 +1973,7 @@ ServerEvents.recipes(event => {
         .EUt(480)
 
     gtr.assembler("gtocore:energetic_photovoltaic_block")
-        .itemInputs("enderio:energetic_photovoltaic_module", "4x enderio:energy_conduit", "4x gtceu:vacuum_tube", "4x gtceu:red_alloy_double_cable", "2x gtceu:steel_plate")
+        .itemInputs("enderio:energetic_photovoltaic_module", "4x enderio:energy_conduit", "4x gtceu:vacuum_tube", "4x gtceu:red_alloy_double_cable", "2x ad_astra:steel_plate")
         .itemOutputs("gtocore:energetic_photovoltaic_block")
         .duration(200)
         .EUt(30)

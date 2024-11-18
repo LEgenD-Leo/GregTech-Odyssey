@@ -28,16 +28,6 @@ ServerEvents.recipes(event => {
         .EUt(120)
         .duration(200)
 
-    gtr.electric_blast_furnace("gtocore:iron_plate")
-        .itemInputs("gtceu:magnetic_iron_block", "gtceu:double_wrought_iron_plate", "16x gtceu:wrought_iron_dust")
-        .inputFluids("gtceu:iron 1296")
-        .itemOutputs("ad_astra:iron_plate")
-        .chancedOutput("gtceu:steel_ingot", 5000, 0)
-        .outputFluids("gtceu:wrought_iron 864")
-        .EUt(480)
-        .duration(800)
-        .blastFurnaceTemp(2400)
-
     event.custom({
         "type": "ad_astra:nasa_workbench",
         "ingredients": [
@@ -201,22 +191,22 @@ ServerEvents.recipes(event => {
                 "item": "ad_astra:rocket_nose_cone"
             },
             {
-                "item": "ad_astra:desh_plate"
+                "item": "gtceu:dense_desh_plate"
             },
             {
-                "item": "ad_astra:desh_plate"
+                "item": "gtceu:dense_desh_plate"
             },
             {
-                "item": "ad_astra:desh_plate"
+                "item": "gtceu:dense_desh_plate"
             },
             {
-                "item": "ad_astra:desh_plate"
+                "item": "gtceu:dense_desh_plate"
             },
             {
-                "item": "ad_astra:desh_plate"
+                "item": "gtceu:dense_desh_plate"
             },
             {
-                "item": "ad_astra:desh_plate"
+                "item": "gtceu:dense_desh_plate"
             },
             {
                 "item": "ad_astra:rocket_fin"
@@ -253,22 +243,22 @@ ServerEvents.recipes(event => {
                 "item": "ad_astra:rocket_nose_cone"
             },
             {
-                "item": "ad_astra:ostrum_plate"
+                "item": "gtceu:dense_ostrum_plate"
             },
             {
-                "item": "ad_astra:ostrum_plate"
+                "item": "gtceu:dense_ostrum_plate"
             },
             {
-                "item": "ad_astra:ostrum_plate"
+                "item": "gtceu:dense_ostrum_plate"
             },
             {
-                "item": "ad_astra:ostrum_plate"
+                "item": "gtceu:dense_ostrum_plate"
             },
             {
-                "item": "ad_astra:ostrum_plate"
+                "item": "gtceu:dense_ostrum_plate"
             },
             {
-                "item": "ad_astra:ostrum_plate"
+                "item": "gtceu:dense_ostrum_plate"
             },
             {
                 "item": "ad_astra:rocket_fin"
@@ -305,22 +295,22 @@ ServerEvents.recipes(event => {
                 "item": "ad_astra:rocket_nose_cone"
             },
             {
-                "item": "ad_astra:calorite_plate"
+                "item": "gtceu:dense_calorite_plate"
             },
             {
-                "item": "ad_astra:calorite_plate"
+                "item": "gtceu:dense_calorite_plate"
             },
             {
-                "item": "ad_astra:calorite_plate"
+                "item": "gtceu:dense_calorite_plate"
             },
             {
-                "item": "ad_astra:calorite_plate"
+                "item": "gtceu:dense_calorite_plate"
             },
             {
-                "item": "ad_astra:calorite_plate"
+                "item": "gtceu:dense_calorite_plate"
             },
             {
-                "item": "ad_astra:calorite_plate"
+                "item": "gtceu:dense_calorite_plate"
             },
             {
                 "item": "ad_astra:rocket_fin"
@@ -384,15 +374,6 @@ ServerEvents.recipes(event => {
         .EUt(120)
         .duration(200)
 
-    gtr.electric_blast_furnace("gtocore:steel_plate")
-        .itemInputs("gtceu:magnetic_steel_block", "ad_astra:iron_plate", "16x gtceu:damascus_steel_dust")
-        .inputFluids("gtceu:titanium 1296")
-        .itemOutputs("ad_astra:steel_plate")
-        .chancedOutput("gtceu:titanium_ingot", 5000, 0)
-        .EUt(480)
-        .duration(1600)
-        .blastFurnaceTemp(3200)
-
     gtr.electric_blast_furnace("gtocore:desh_ingot")
         .itemInputs("gtceu:desh_dust", "gtceu:rhodium_dust")
         .inputFluids("gtceu:bismuth_bronze 144")
@@ -416,68 +397,50 @@ ServerEvents.recipes(event => {
         .duration(3200)
         .blastFurnaceTemp(6100)
 
-    gtr.rolling("gtocore:desh_plate")
-        .itemInputs("ad_astra:desh_block")
-        .itemOutputs("ad_astra:desh_plate")
-        .EUt(1920)
-        .duration(200)
-
-    gtr.rolling("gtocore:ostrum_plate")
-        .itemInputs("ad_astra:ostrum_block")
-        .itemOutputs("ad_astra:ostrum_plate")
-        .EUt(7680)
-        .duration(200)
-
-    gtr.rolling("gtocore:calorite_plate")
-        .itemInputs("ad_astra:calorite_block")
-        .itemOutputs("ad_astra:calorite_plate")
-        .EUt(7680)
-        .duration(200)
-
     gtr.assembler("gtocore:desh_engine")
-        .itemInputs("gtceu:blue_steel_frame", "ad_astra:steel_engine", "2x gtceu:ev_field_generator", "16x #gtceu:circuits/iv", "gtceu:ev_fluid_regulator", "16x ad_astra:desh_fluid_pipe", "8x ad_astra:desh_plate")
+        .itemInputs("gtceu:blue_steel_frame", "ad_astra:steel_engine", "2x gtceu:ev_field_generator", "16x #gtceu:circuits/iv", "gtceu:ev_fluid_regulator", "16x ad_astra:desh_fluid_pipe", "8x gtceu:dense_desh_plate")
         .inputFluids("gtceu:tungsten_steel 1296")
         .itemOutputs("ad_astra:desh_engine")
         .EUt(1920)
         .duration(400)
 
     gtr.assembler("gtocore:desh_tank")
-        .itemInputs("gtceu:titanium_fluid_cell", "8x ad_astra:desh_fluid_pipe", "gtceu:ev_electric_pump", "8x gtceu:titanium_plate", "4x ad_astra:desh_plate")
+        .itemInputs("gtceu:titanium_fluid_cell", "8x ad_astra:desh_fluid_pipe", "gtceu:ev_electric_pump", "8x gtceu:titanium_plate", "4x gtceu:dense_desh_plate")
         .inputFluids("gtceu:soldering_alloy 288")
         .itemOutputs("ad_astra:desh_tank")
         .EUt(480)
         .duration(200)
 
     gtr.assembler("gtocore:ostrum_tank")
-        .itemInputs("gtceu:tungstensteel_fluid_cell", "8x ad_astra:ostrum_fluid_pipe", "gtceu:iv_electric_pump", "8x gtceu:double_palladium_plate", "4x ad_astra:ostrum_plate")
+        .itemInputs("gtceu:tungstensteel_fluid_cell", "8x ad_astra:ostrum_fluid_pipe", "gtceu:iv_electric_pump", "8x gtceu:double_palladium_plate", "4x gtceu:dense_ostrum_plate")
         .inputFluids("gtceu:soldering_alloy 288")
         .itemOutputs("ad_astra:ostrum_tank")
         .EUt(7680)
         .duration(200)
 
     gtr.assembler("gtocore:ostrum_engine")
-        .itemInputs("gtceu:hsse_frame", "ad_astra:steel_engine", "2x gtceu:iv_field_generator", "16x #gtceu:circuits/luv", "gtceu:iv_fluid_regulator", "16x ad_astra:ostrum_fluid_pipe", "8x ad_astra:ostrum_plate")
+        .itemInputs("gtceu:hsse_frame", "ad_astra:steel_engine", "2x gtceu:iv_field_generator", "16x #gtceu:circuits/luv", "gtceu:iv_fluid_regulator", "16x ad_astra:ostrum_fluid_pipe", "8x gtceu:dense_ostrum_plate")
         .inputFluids("gtceu:rhodium_plated_palladium 1296")
         .itemOutputs("ad_astra:ostrum_engine")
         .EUt(7680)
         .duration(400)
 
     gtr.assembler("gtocore:calorite_tank")
-        .itemInputs("gtceu:tungstensteel_fluid_cell", "8x gtceu:naquadah_normal_fluid_pipe", "gtceu:luv_electric_pump", "8x gtceu:enriched_naquadah_plate", "4x ad_astra:calorite_plate")
+        .itemInputs("gtceu:tungstensteel_fluid_cell", "8x gtceu:naquadah_normal_fluid_pipe", "gtceu:luv_electric_pump", "8x gtceu:enriched_naquadah_plate", "4x gtceu:dense_calorite_plate")
         .inputFluids("gtceu:soldering_alloy 288")
         .itemOutputs("ad_astra:calorite_tank")
         .EUt(30720)
         .duration(200)
 
     gtr.assembler("gtocore:calorite_engine")
-        .itemInputs("gtceu:naquadah_frame", "ad_astra:steel_engine", "2x gtceu:luv_field_generator", "16x #gtceu:circuits/zpm", "gtceu:luv_fluid_regulator", "16x gtceu:naquadah_normal_fluid_pipe", "8x ad_astra:calorite_plate")
+        .itemInputs("gtceu:naquadah_frame", "ad_astra:steel_engine", "2x gtceu:luv_field_generator", "16x #gtceu:circuits/zpm", "gtceu:luv_fluid_regulator", "16x gtceu:naquadah_normal_fluid_pipe", "8x gtceu:dense_calorite_plate")
         .inputFluids("gtceu:naquadah_alloy 1296")
         .itemOutputs("ad_astra:calorite_engine")
         .EUt(30720)
         .duration(400)
 
     gtr.assembly_line("gtocore:tier_7_rocket")
-        .itemInputs("ad_astra:rocket_nose_cone", "gtceu:zpm_field_generator", "16x #gtceu:circuits/uv", "4x gtceu:zpm_emitter", "4x gtceu:zpm_fluid_regulator", "4x ad_astra:calorite_tank", "ad_astra:calorite_engine", "8x ad_astra:ostrum_block", "32x gtceu:fall_king_block", "64x ad_astra:calorite_plate", "4x ad_astra:rocket_fin")
+        .itemInputs("ad_astra:rocket_nose_cone", "gtceu:zpm_field_generator", "16x #gtceu:circuits/uv", "4x gtceu:zpm_emitter", "4x gtceu:zpm_fluid_regulator", "4x ad_astra:calorite_tank", "ad_astra:calorite_engine", "8x ad_astra:ostrum_block", "32x gtceu:fall_king_block", "64x gtceu:dense_calorite_plate", "4x ad_astra:rocket_fin")
         .inputFluids("gtceu:soldering_alloy 5760", "gtceu:lubricant 4000", "gtceu:pcb_coolant 4000", "gtceu:indium_tin_barium_titanium_cuprate 1296")
         .itemOutputs("ad_astra_rocketed:tier_7_rocket")
         .EUt(122880)

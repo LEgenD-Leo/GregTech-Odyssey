@@ -348,7 +348,10 @@
 				{
 					count: 4L
 					id: "1CB49FF2229A3D77"
-					item: { Count: 4, id: "gtceu:steel_block" }
+					item: {
+						Count: 4
+						id: "gtceu:steel_block"
+					}
 					type: "item"
 				}
 				{
@@ -394,7 +397,7 @@
 			}]
 			tasks: [{
 				id: "78729EFD5CE8CD48"
-				item: "gtceu:steel_plate"
+				item: "ad_astra:steel_plate"
 				type: "item"
 			}]
 			x: 10.0d

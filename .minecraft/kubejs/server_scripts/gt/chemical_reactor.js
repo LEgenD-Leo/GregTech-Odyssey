@@ -690,7 +690,7 @@ ServerEvents.recipes(event => {
         .duration(60)
 
     gtr.chemical_reactor("gtocore:aniline")
-        .notConsumable("#forge:dusts/zinc")
+        .notConsumable("gtceu:zinc_dust")
         .inputFluids("gtceu:nitrobenzene 1000", "gtceu:hydrogen 3000")
         .outputFluids("gtceu:aniline 1000", "minecraft:water 2000")
         .EUt(1920)
@@ -713,7 +713,7 @@ ServerEvents.recipes(event => {
 
     gtr.chemical_reactor("gtocore:oxydianiline")
         .inputFluids("gtceu:aniline 2000", "gtceu:phenol 1000")
-        .notConsumable("#forge:dusts/tin")
+        .notConsumable("enderio:powdered_tin")
         .outputFluids("gtceu:oxydianiline 1000", "gtceu:methane 2000")
         .EUt(120)
         .duration(150)

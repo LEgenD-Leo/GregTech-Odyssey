@@ -2,6 +2,8 @@ disableDrift: true
 
 enablePrimitiveVoidOre: false
 
+disableMultiBlockPage: false
+
 oreMultiplier: 4
 
 spacetimePip: 2147483647

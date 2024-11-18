@@ -2,18 +2,18 @@ ServerEvents.recipes(event => {
     const gtr = event.recipes.gtceu
 
     const isa_mill_ores = [
-        ["gtceu:milled_almandine", "gtceu:raw_almandine", "#forge:ores/almandine"],
-        ["gtceu:milled_chalcopyrite", "gtceu:raw_chalcopyrite", "#forge:ores/chalcopyrite"],
-        ["gtceu:milled_grossular", "gtceu:raw_grossular", "#forge:ores/grossular"],
-        ["gtceu:milled_monazite", "gtceu:raw_monazite", "#forge:ores/monazite"],
-        ["gtceu:milled_nickel", "gtceu:raw_nickel", "#forge:ores/nickel"],
-        ["gtceu:milled_pentlandite", "gtceu:raw_pentlandite", "#forge:ores/pentlandite"],
-        ["gtceu:milled_platinum", "gtceu:raw_platinum", "#forge:ores/platinum"],
-        ["gtceu:milled_pyrope", "gtceu:raw_pyrope", "#forge:ores/pyrope"],
-        ["gtceu:milled_redstone", "gtceu:raw_redstone", "#forge:ores/redstone"],
-        ["gtceu:milled_spessartine", "gtceu:raw_spessartine", "#forge:ores/spessartine"],
-        ["gtceu:milled_sphalerite", "gtceu:raw_sphalerite", "#forge:ores/sphalerite"],
-        ["gtceu:milled_enriched_naquadah", "gtceu:raw_enriched_naquadah", "#forge:ores/enriched_naquadah"]]
+        ["gtceu:milled_almandine", "gtceu:raw_almandine", "#forge:gt_ores/almandine"],
+        ["gtceu:milled_chalcopyrite", "gtceu:raw_chalcopyrite", "#forge:gt_ores/chalcopyrite"],
+        ["gtceu:milled_grossular", "gtceu:raw_grossular", "#forge:gt_ores/grossular"],
+        ["gtceu:milled_monazite", "gtceu:raw_monazite", "#forge:gt_ores/monazite"],
+        ["gtceu:milled_nickel", "gtceu:raw_nickel", "#forge:gt_ores/nickel"],
+        ["gtceu:milled_pentlandite", "gtceu:raw_pentlandite", "#forge:gt_ores/pentlandite"],
+        ["gtceu:milled_platinum", "gtceu:raw_platinum", "#forge:gt_ores/platinum"],
+        ["gtceu:milled_pyrope", "gtceu:raw_pyrope", "#forge:gt_ores/pyrope"],
+        ["gtceu:milled_redstone", "gtceu:raw_redstone", "#forge:gt_ores/redstone"],
+        ["gtceu:milled_spessartine", "gtceu:raw_spessartine", "#forge:gt_ores/spessartine"],
+        ["gtceu:milled_sphalerite", "gtceu:raw_sphalerite", "#forge:gt_ores/sphalerite"],
+        ["gtceu:milled_enriched_naquadah", "gtceu:raw_enriched_naquadah", "#forge:gt_ores/enriched_naquadah"]]
     isa_mill_ores.forEach((isa_mill_ore) => {
         gtr.isa_mill(isa_mill_ore[0] + "_rgs")
             .circuit(1)

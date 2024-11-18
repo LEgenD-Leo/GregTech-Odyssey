@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
         "CDC",
         "ACA"
     ], {
-        A: "gtceu:steel_plate",
+        A: "ad_astra:steel_plate",
         C: "gtceu:gold_plate",
         D: "enderio:pulsating_alloy_block"
     })
@@ -668,7 +668,7 @@ ServerEvents.recipes(event => {
         "DBD"
     ], {
         A: "gtceu:bronze_rod",
-        B: "gtceu:steel_plate",
+        B: "ad_astra:steel_plate",
         C: "gtceu:bronze_pipe_casing",
         D: "gtceu:potin_gear"
     })
@@ -1056,7 +1056,7 @@ ServerEvents.recipes(event => {
         A: "gtocore:energetic_photovoltaic_block",
         B: "enderio:copper_alloy_block",
         C: "#gtceu:circuits/mv",
-        D: "gtceu:steel_plate"
+        D: "ad_astra:steel_plate"
     })
 
     event.shaped("gtocore:pulsating_photovoltaic_power_station", [

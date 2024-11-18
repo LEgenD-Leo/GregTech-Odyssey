@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         "LBL",
         "FLF"
     ], {
-        S: "#forge:screws/wrought_iron",
+        S: "gtceu:wrought_iron_screw",
         L: "minecraft:leather",
         B: "gtceu:wood_crate",
         F: "minecraft:string"

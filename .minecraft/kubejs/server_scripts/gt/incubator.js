@@ -2,101 +2,101 @@ ServerEvents.recipes(event => {
     const gtr = event.recipes.gtceu
 
     const overworld_ore =
-        [[["6x #forge:ores/bentonite",
-            "4x #forge:ores/magnetite",
-            "4x #forge:ores/olivine",
-            "2x #forge:ores/glauconite_sand"], "gtocore:olivine_vein_essence"],
+        [[["6x #forge:gt_ores/bentonite",
+            "4x #forge:gt_ores/magnetite",
+            "4x #forge:gt_ores/olivine",
+            "2x #forge:gt_ores/glauconite_sand"], "gtocore:olivine_vein_essence"],
 
-        [["18x #forge:ores/almandine",
-            "12x #forge:ores/pyrope",
-            "6x #forge:ores/sapphire",
-            "6x #forge:ores/green_sapphire"], "gtocore:sapphire_vein_essence"],
+        [["18x #forge:gt_ores/almandine",
+            "12x #forge:gt_ores/pyrope",
+            "6x #forge:gt_ores/sapphire",
+            "6x #forge:gt_ores/green_sapphire"], "gtocore:sapphire_vein_essence"],
 
-        [["6x #forge:ores/goethite",
-            "24x #forge:ores/yellow_limonite",
-            "24x #forge:ores/hematite",
-            "12x #forge:ores/malachite"], "gtocore:iron_vein_essence"],
+        [["6x #forge:gt_ores/goethite",
+            "24x #forge:gt_ores/yellow_limonite",
+            "24x #forge:gt_ores/hematite",
+            "12x #forge:gt_ores/malachite"], "gtocore:iron_vein_essence"],
 
-        [["12x #forge:ores/soapstone",
-            "8x #forge:ores/talc",
-            "8x #forge:ores/glauconite_sand",
-            "4x #forge:ores/pentlandite"], "gtocore:lubricant_vein_essence"],
+        [["12x #forge:gt_ores/soapstone",
+            "8x #forge:gt_ores/talc",
+            "8x #forge:gt_ores/glauconite_sand",
+            "4x #forge:gt_ores/pentlandite"], "gtocore:lubricant_vein_essence"],
 
-        [["6x #forge:ores/grossular",
-            "4x #forge:ores/spessartine",
-            "4x #forge:ores/pyrolusite",
-            "2x #forge:ores/tantalite"], "gtocore:manganese_vein_ow_essence"],
+        [["6x #forge:gt_ores/grossular",
+            "4x #forge:gt_ores/spessartine",
+            "4x #forge:gt_ores/pyrolusite",
+            "2x #forge:gt_ores/tantalite"], "gtocore:manganese_vein_ow_essence"],
 
-        [["25x #forge:ores/chalcopyrite",
-            "1x #forge:ores/zeolite",
-            "1x #forge:ores/cassiterite",
-            "5x #forge:ores/realgar"], "gtocore:copper_tin_vein_essence"],
+        [["25x #forge:gt_ores/chalcopyrite",
+            "1x #forge:gt_ores/zeolite",
+            "1x #forge:gt_ores/cassiterite",
+            "5x #forge:gt_ores/realgar"], "gtocore:copper_tin_vein_essence"],
 
-        [["24x #forge:ores/coal"], "gtocore:coal_vein_essence"],
+        [["24x #forge:gt_ores/coal"], "gtocore:coal_vein_essence"],
 
-        [["4x #forge:ores/chalcopyrite",
-            "16x #forge:ores/iron",
-            "16x #forge:ores/pyrite",
-            "16x #forge:ores/copper"], "gtocore:copper_vein_essence"],
+        [["4x #forge:gt_ores/chalcopyrite",
+            "16x #forge:gt_ores/iron",
+            "16x #forge:gt_ores/pyrite",
+            "16x #forge:gt_ores/copper"], "gtocore:copper_vein_essence"],
 
-        [["24x #forge:ores/magnetite",
-            "16x #forge:ores/vanadium_magnetite",
-            "8x #forge:ores/gold"], "gtocore:magnetite_vein_ow_essence"],
+        [["24x #forge:gt_ores/magnetite",
+            "16x #forge:gt_ores/vanadium_magnetite",
+            "8x #forge:gt_ores/gold"], "gtocore:magnetite_vein_ow_essence"],
 
-        [["12x #forge:ores/lazurite",
-            "8x #forge:ores/sodalite",
-            "8x #forge:ores/lapis",
-            "4x #forge:ores/calcite"], "gtocore:lapis_vein_essence"],
+        [["12x #forge:gt_ores/lazurite",
+            "8x #forge:gt_ores/sodalite",
+            "8x #forge:gt_ores/lapis",
+            "4x #forge:gt_ores/calcite"], "gtocore:lapis_vein_essence"],
 
-        [["12x #forge:ores/galena",
-            "8x #forge:ores/silver",
-            "4x #forge:ores/lead"], "gtocore:galena_vein_essence"],
+        [["12x #forge:gt_ores/galena",
+            "8x #forge:gt_ores/silver",
+            "4x #forge:gt_ores/lead"], "gtocore:galena_vein_essence"],
 
-        [["6x #forge:ores/kyanite",
-            "4x #forge:ores/mica",
-            "4x #forge:ores/bauxite",
-            "2x #forge:ores/pollucite"], "gtocore:mica_vein_essence"],
+        [["6x #forge:gt_ores/kyanite",
+            "4x #forge:gt_ores/mica",
+            "4x #forge:gt_ores/bauxite",
+            "2x #forge:gt_ores/pollucite"], "gtocore:mica_vein_essence"],
 
-        [["32x #forge:ores/tin",
-            "16x #forge:ores/cassiterite"], "gtocore:cassiterite_vein_essence"],
+        [["32x #forge:gt_ores/tin",
+            "16x #forge:gt_ores/cassiterite"], "gtocore:cassiterite_vein_essence"],
 
-        [["12x #forge:ores/red_garnet",
-            "8x #forge:ores/yellow_garnet",
-            "8x #forge:ores/amethyst",
-            "4x #forge:ores/opal"], "gtocore:garnet_vein_essence"],
+        [["12x #forge:gt_ores/red_garnet",
+            "8x #forge:gt_ores/yellow_garnet",
+            "8x #forge:gt_ores/amethyst",
+            "4x #forge:gt_ores/opal"], "gtocore:garnet_vein_essence"],
 
-        [["24x #forge:ores/basaltic_mineral_sand",
-            "16x #forge:ores/granitic_mineral_sand",
-            "16x #forge:ores/fullers_earth",
-            "8x #forge:ores/gypsum"], "gtocore:mineral_sand_vein_essence"],
+        [["24x #forge:gt_ores/basaltic_mineral_sand",
+            "16x #forge:gt_ores/granitic_mineral_sand",
+            "16x #forge:gt_ores/fullers_earth",
+            "8x #forge:gt_ores/gypsum"], "gtocore:mineral_sand_vein_essence"],
 
-        [["15x #forge:ores/rock_salt",
-            "1x #forge:ores/salt",
-            "5x #forge:ores/lepidolite",
-            "5x #forge:ores/spodumene"], "gtocore:salts_vein_essence"],
+        [["15x #forge:gt_ores/rock_salt",
+            "1x #forge:gt_ores/salt",
+            "5x #forge:gt_ores/lepidolite",
+            "5x #forge:gt_ores/spodumene"], "gtocore:salts_vein_essence"],
 
-        [["18x #forge:ores/redstone",
-            "12x #forge:ores/ruby",
-            "6x #forge:ores/cinnabar"], "gtocore:redstone_vein_ow_essence"],
+        [["18x #forge:gt_ores/redstone",
+            "12x #forge:gt_ores/ruby",
+            "6x #forge:gt_ores/cinnabar"], "gtocore:redstone_vein_ow_essence"],
 
-        [["12x #forge:ores/apatite",
-            "8x #forge:ores/tricalcium_phosphate",
-            "4x #forge:ores/pyrochlore"], "gtocore:apatite_vein_essence"],
+        [["12x #forge:gt_ores/apatite",
+            "8x #forge:gt_ores/tricalcium_phosphate",
+            "4x #forge:gt_ores/pyrochlore"], "gtocore:apatite_vein_essence"],
 
-        [["24x #forge:ores/cassiterite_sand",
-            "16x #forge:ores/garnet_sand",
-            "16x #forge:ores/asbestos",
-            "8x #forge:ores/diatomite"], "gtocore:garnet_tin_vein_essence"],
+        [["24x #forge:gt_ores/cassiterite_sand",
+            "16x #forge:gt_ores/garnet_sand",
+            "16x #forge:gt_ores/asbestos",
+            "8x #forge:gt_ores/diatomite"], "gtocore:garnet_tin_vein_essence"],
 
-        [["24x #forge:ores/oilsands"], "gtocore:oilsands_vein_essence"],
+        [["24x #forge:gt_ores/oilsands"], "gtocore:oilsands_vein_essence"],
 
-        [["12x #forge:ores/graphite",
-            "8x #forge:ores/diamond"], "gtocore:diamond_vein_essence"],
+        [["12x #forge:gt_ores/graphite",
+            "8x #forge:gt_ores/diamond"], "gtocore:diamond_vein_essence"],
 
-        [["12x #forge:ores/garnierite",
-            "8x #forge:ores/nickel",
-            "8x #forge:ores/cobaltite",
-            "4x #forge:ores/pentlandite"], "gtocore:nickel_vein_essence"]]
+        [["12x #forge:gt_ores/garnierite",
+            "8x #forge:gt_ores/nickel",
+            "8x #forge:gt_ores/cobaltite",
+            "4x #forge:gt_ores/pentlandite"], "gtocore:nickel_vein_essence"]]
 
     overworld_ore.forEach((overworld) => {
         gtr.incubator("overworld_e_" + overworld[1])
@@ -110,56 +110,56 @@ ServerEvents.recipes(event => {
     })
 
     const nether_ore =
-        [[["28x #forge:ores/tetrahedrite",
-            "14x #forge:ores/copper",
-            "7x #forge:ores/stibnite"], "gtocore:tetrahedrite_vein_essence"],
+        [[["28x #forge:gt_ores/tetrahedrite",
+            "14x #forge:gt_ores/copper",
+            "7x #forge:gt_ores/stibnite"], "gtocore:tetrahedrite_vein_essence"],
 
-        [["9x #forge:ores/bastnasite",
-            "3x #forge:ores/molybdenum",
-            "3x #forge:ores/neodymium"], "gtocore:monazite_vein_essence"],
+        [["9x #forge:gt_ores/bastnasite",
+            "3x #forge:gt_ores/molybdenum",
+            "3x #forge:gt_ores/neodymium"], "gtocore:monazite_vein_essence"],
 
-        [["18x #forge:ores/redstone",
-            "12x #forge:ores/ruby",
-            "6x #forge:ores/cinnabar"], "gtocore:redstone_vein_essence"],
+        [["18x #forge:gt_ores/redstone",
+            "12x #forge:gt_ores/ruby",
+            "6x #forge:gt_ores/cinnabar"], "gtocore:redstone_vein_essence"],
 
-        [["12x #forge:ores/saltpeter",
-            "8x #forge:ores/diatomite",
-            "8x #forge:ores/electrotine",
-            "4x #forge:ores/alunite"], "gtocore:saltpeter_vein_essence"],
+        [["12x #forge:gt_ores/saltpeter",
+            "8x #forge:gt_ores/diatomite",
+            "8x #forge:gt_ores/electrotine",
+            "4x #forge:gt_ores/alunite"], "gtocore:saltpeter_vein_essence"],
 
-        [["9x #forge:ores/beryllium",
-            "12x #forge:ores/emerald"], "gtocore:beryllium_vein_essence"],
+        [["9x #forge:gt_ores/beryllium",
+            "12x #forge:gt_ores/emerald"], "gtocore:beryllium_vein_essence"],
 
-        [["6x #forge:ores/grossular",
-            "4x #forge:ores/pyrolusite",
-            "2x #forge:ores/tantalite"], "gtocore:manganese_vein_essence"],
+        [["6x #forge:gt_ores/grossular",
+            "4x #forge:gt_ores/pyrolusite",
+            "2x #forge:gt_ores/tantalite"], "gtocore:manganese_vein_essence"],
 
-        [["15x #forge:ores/wulfenite",
-            "1x #forge:ores/molybdenite",
-            "5x #forge:ores/molybdenum",
-            "5x #forge:ores/powellite"], "gtocore:molybdenum_vein_essence"],
+        [["15x #forge:gt_ores/wulfenite",
+            "1x #forge:gt_ores/molybdenite",
+            "5x #forge:gt_ores/molybdenum",
+            "5x #forge:gt_ores/powellite"], "gtocore:molybdenum_vein_essence"],
 
-        [["9x #forge:ores/goethite",
-            "6x #forge:ores/yellow_limonite",
-            "6x #forge:ores/hematite",
-            "3x #forge:ores/gold"], "gtocore:banded_iron_vein_essence"],
+        [["9x #forge:gt_ores/goethite",
+            "6x #forge:gt_ores/yellow_limonite",
+            "6x #forge:gt_ores/hematite",
+            "3x #forge:gt_ores/gold"], "gtocore:banded_iron_vein_essence"],
 
-        [["12x #forge:ores/quartzite",
-            "8x #forge:ores/certus_quartz",
-            "4x #forge:ores/barite"], "gtocore:certus_quartz_essence"],
+        [["12x #forge:gt_ores/quartzite",
+            "8x #forge:gt_ores/certus_quartz",
+            "4x #forge:gt_ores/barite"], "gtocore:certus_quartz_essence"],
 
-        [["21x #forge:ores/blue_topaz",
-            "14x #forge:ores/topaz",
-            "14x #forge:ores/chalcocite",
-            "7x #forge:ores/bornite"], "gtocore:topaz_vein_essence"],
+        [["21x #forge:gt_ores/blue_topaz",
+            "14x #forge:gt_ores/topaz",
+            "14x #forge:gt_ores/chalcocite",
+            "7x #forge:gt_ores/bornite"], "gtocore:topaz_vein_essence"],
 
-        [["24x #forge:ores/nether_quartz",
-            "8x #forge:ores/quartzite",
+        [["24x #forge:gt_ores/nether_quartz",
+            "8x #forge:gt_ores/quartzite",
             "5x minecraft:ancient_debris"], "gtocore:nether_quartz_vein_essence"],
 
-        [["3x #forge:ores/sulfur",
-            "2x #forge:ores/pyrite",
-            "1x #forge:ores/sphalerite"], "gtocore:sulfur_vein_essence"]]
+        [["3x #forge:gt_ores/sulfur",
+            "2x #forge:gt_ores/pyrite",
+            "1x #forge:gt_ores/sphalerite"], "gtocore:sulfur_vein_essence"]]
 
     nether_ore.forEach((nether_) => {
         gtr.incubator("nether_e_" + nether_[1])
@@ -174,29 +174,29 @@ ServerEvents.recipes(event => {
     })
 
     const end_ore =
-        [[["18x #forge:ores/magnetite",
-            "12x #forge:ores/vanadium_magnetite",
-            "12x #forge:ores/chromite",
-            "6x #forge:ores/gold"], "gtocore:magnetite_vein_end_essence"],
+        [[["18x #forge:gt_ores/magnetite",
+            "12x #forge:gt_ores/vanadium_magnetite",
+            "12x #forge:gt_ores/chromite",
+            "6x #forge:gt_ores/gold"], "gtocore:magnetite_vein_end_essence"],
 
-        [["16x #forge:ores/bauxite",
-            "8x #forge:ores/ilmenite",
-            "8x #forge:ores/aluminium"], "gtocore:bauxite_vein_end_essence"],
+        [["16x #forge:gt_ores/bauxite",
+            "8x #forge:gt_ores/ilmenite",
+            "8x #forge:gt_ores/aluminium"], "gtocore:bauxite_vein_end_essence"],
 
-        [["6x #forge:ores/bornite",
-            "4x #forge:ores/cooperite",
-            "4x #forge:ores/platinum",
-            "2x #forge:ores/palladium"], "gtocore:sheldonite_vein_essence"],
+        [["6x #forge:gt_ores/bornite",
+            "4x #forge:gt_ores/cooperite",
+            "4x #forge:gt_ores/platinum",
+            "2x #forge:gt_ores/palladium"], "gtocore:sheldonite_vein_essence"],
 
-        [["12x #forge:ores/scheelite",
-            "8x #forge:ores/tungstate",
-            "4x #forge:ores/lithium"], "gtocore:scheelite_vein_essence"],
+        [["12x #forge:gt_ores/scheelite",
+            "8x #forge:gt_ores/tungstate",
+            "4x #forge:gt_ores/lithium"], "gtocore:scheelite_vein_essence"],
 
-        [["18x #forge:ores/pitchblende",
-            "12x #forge:ores/uraninite"], "gtocore:pitchblende_vein_end_essence"],
+        [["18x #forge:gt_ores/pitchblende",
+            "12x #forge:gt_ores/uraninite"], "gtocore:pitchblende_vein_end_essence"],
 
-        [["18x #forge:ores/naquadah",
-            "6x #forge:ores/plutonium"], "gtocore:naquadah_vein_essence"]]
+        [["18x #forge:gt_ores/naquadah",
+            "6x #forge:gt_ores/plutonium"], "gtocore:naquadah_vein_essence"]]
 
     end_ore.forEach((end) => {
         gtr.incubator("end_e_" + end[1])
@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
     })
 
     gtr.incubator("gtocore:variation_wood")
-        .itemInputs("64x gtocore:barnarda_c_log", "16x minecraft:crimson_stem", "64x #forge:dusts/wood", "gtceu:lapotron_dust")
+        .itemInputs("64x gtocore:barnarda_c_log", "16x minecraft:crimson_stem", "64x gtceu:wood_dust", "gtceu:lapotron_dust")
         .inputFluids("gtceu:unknowwater 10000", "gtceu:biomass 1000")
         .itemOutputs("64x gtocore:variation_wood")
         .EUt(GTValues.VA[GTValues.UHV])
@@ -219,7 +219,7 @@ ServerEvents.recipes(event => {
         .addData("radioactivity", 440)
 
     gtr.incubator("gtocore:variation_wood1")
-        .itemInputs("64x gtocore:barnarda_c_log", "16x minecraft:warped_stem", "64x #forge:dusts/wood", "gtceu:lapotron_dust")
+        .itemInputs("64x gtocore:barnarda_c_log", "16x minecraft:warped_stem",  "64x gtceu:wood_dust", "gtceu:lapotron_dust")
         .inputFluids("gtceu:unknowwater 10000", "gtceu:biomass 1000")
         .itemOutputs("64x gtocore:variation_wood")
         .EUt(GTValues.VA[GTValues.UHV])

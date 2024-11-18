@@ -113,13 +113,13 @@ ServerEvents.recipes((event) => {
         .EUt(16)
 
     gtr.compressor("gtocore:spongebob")
-        .itemInputs("2x #forge:foils/polycaprolactam")
+        .itemInputs("2x gtceu:polycaprolactam_foil")
         .itemOutputs("minecraft:sponge")
         .duration(200)
         .EUt(2)
 
     gtr.arc_generator("gtocore:nether_star_dust")
-        .itemInputs("#forge:dusts/diamond", "#forge:dusts/iridium")
+        .itemInputs("gtceu:diamond_dust", "gtceu:iridium_dust")
         .inputFluids("gtceu:rocket_fuel 1000", "gtceu:nether_air 8000")
         .itemOutputs("gtceu:nether_star_dust")
         .duration(200)

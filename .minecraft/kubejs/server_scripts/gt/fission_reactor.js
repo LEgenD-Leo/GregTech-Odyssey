@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     const gtr = event.recipes.gtceu
 
     function assemble_fuel(name, isnq) {
-        let rod = isnq ? "4x gtceu:tungsten_carbide_rod" : "4x gtceu:steel_rod"
+        let rod = isnq ? "4x gtceu:tungsten_carbide_rod" : "4x ad_astra:steel_rod"
         gtr.assembler("gtocore:reactor_" + name + "_dual")
             .itemInputs("2x gtocore:reactor_" + name + "_simple", rod)
             .itemOutputs("gtocore:reactor_" + name + "_dual")
@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
     assemble_fuel("naquadah", true)
 
     function centrifuge_fuel(name, isnq, product, output, chance, extra) {
-        let rod = isnq ? "gtceu:tungsten_carbide_rod" : "gtceu:steel_rod"
+        let rod = isnq ? "gtceu:tungsten_carbide_rod" : "ad_astra:steel_rod"
         let fuel_rod = isnq ? "gtocore:tungsten_carbide_reactor_fuel_rod" : "gtocore:reactor_fuel_rod"
         gtr.centrifuge("gtocore:depleted_reactor_" + name + "_simple")
             .itemInputs("gtocore:depleted_reactor_" + name + "_simple")
