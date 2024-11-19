@@ -4,6 +4,8 @@ enablePrimitiveVoidOre: false
 
 disableMultiBlockPage: false
 
+optimizationMultiBlockPage: true
+
 oreMultiplier: 4
 
 spacetimePip: 2147483647

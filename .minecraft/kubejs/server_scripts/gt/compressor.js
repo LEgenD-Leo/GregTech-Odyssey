@@ -13,12 +13,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
         .duration(300)
 
-    gtr.compressor("gtocore:diamond_compressed_block")
-        .itemInputs("8x minecraft:diamond_block")
-        .itemOutputs("kubejs:diamond_compressed_block")
-        .EUt(GTValues.VA[GTValues.HV])
-        .duration(300)
-
     gtr.compressor("gtocore:dimensionally_transcendent_steam_oven")
         .itemInputs("16x gtceu:steam_oven")
         .itemOutputs("gtocore:dimensionally_transcendent_steam_oven")
@@ -180,7 +174,8 @@ ServerEvents.recipes(event => {
     }
     implosion_compressor_add(["minecraft:command_block", "gtocore:two_way_foil"], "gtocore:command_block_core", 1)
     implosion_compressor_add(["ae2:singularity", "gtocore:warped_ender_pearl"], "gtocore:entangled_singularity", 1)
-    implosion_compressor_add(["4x ad_astra:steel_plate", "2x gtceu:dense_tungsten_steel_plate"], "ad_astra:steel_block", 1)
+    implosion_compressor_add(["4x gtceu:double_stainless_steel_plate", "2x gtceu:dense_steel_plate"], "gtocore:heavy_duty_plate_1", 1)
+    implosion_compressor_add(["4x gtocore:heavy_duty_plate_2", "2x gtceu:dense_tungsten_steel_plate"], "gtocore:heavy_duty_plate_3", 1)
     implosion_compressor_add(["64x avaritia:neutron_pile", "64x avaritia:neutron_pile"], "avaritia:neutron_nugget", 1)
     implosion_compressor_add("9x avaritia:neutron_nugget", "avaritia:neutron_ingot", 1)
     implosion_compressor_add("9x avaritia:neutron_ingot", "avaritia:neutron", 1)
@@ -188,13 +183,6 @@ ServerEvents.recipes(event => {
     implosion_compressor_add(["4x gtceu:exquisite_diamond_gem", "minecraft:netherite_scrap"], "avaritia:diamond_lattice", 1)
     implosion_compressor_add(["8x avaritia:diamond_lattice", "minecraft:nether_star"], "avaritia:crystal_matrix", 1)
     implosion_compressor_add(["2x minecraft:chest", "2x ae2:smooth_sky_stone_chest"], "avaritia:compressed_chest", 1)
-
-    gtr.electric_implosion_compressor("minecraft:diamond")
-        .itemInputs("64x minecraft:coal")
-        .itemInputs("64x minecraft:coal")
-        .itemOutputs("minecraft:diamond")
-        .EUt(GTValues.VA[GTValues.UV])
-        .duration(1)
 
     gtr.electric_implosion_compressor("avaritia:eternal_singularity")
         .notConsumable("16x gtceu:eternity_nanoswarm")
