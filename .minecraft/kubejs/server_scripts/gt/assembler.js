@@ -2281,12 +2281,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
         .duration(320)
 
-    gtr.assembler("gtocore:hsss_reinforced_borosilicate_glass")
-        .itemInputs("4x gtceu:laminated_glass", "4x gtceu:double_hsss_plate", "32x gtceu:fine_borosilicate_glass_wire")
-        .itemOutputs("2x gtocore:hsss_reinforced_borosilicate_glass")
-        .EUt(GTValues.VA[GTValues.LuV])
-        .duration(600)
-
     gtr.assembler("gtocore:inconel_625_casing")
         .itemInputs("2x gtceu:ev_machine_hull", "4x gtceu:double_inconel_625_plate", "8x gtceu:double_hsse_plate", "16x gtceu:inconel_625_bolt")
         .inputFluids("gtceu:titanium 1152")
