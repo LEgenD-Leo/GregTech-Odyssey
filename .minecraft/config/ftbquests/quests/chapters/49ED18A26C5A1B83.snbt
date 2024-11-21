@@ -1850,7 +1850,7 @@
 			id: "7EE1BA3F7BF5E5B2"
 			tasks: [{
 				id: "0A518B4DE31BBD70"
-				item: "gtocore:nano_forge_1"
+				item: "gtocore:nano_forge"
 				type: "item"
 			}]
 			x: -4.0d

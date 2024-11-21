@@ -472,7 +472,7 @@
 			id: "3B098EA4601A7827"
 			tasks: [{
 				id: "429C36800C493E79"
-				item: "gtocore:nano_forge_1"
+				item: "gtocore:nano_forge"
 				type: "item"
 			}]
 			x: 12.0d

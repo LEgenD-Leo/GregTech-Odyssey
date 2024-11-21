@@ -1,38 +1,6 @@
 ServerEvents.recipes(event => {
     const gtr = event.recipes.gtceu
 
-    const overworld_fluids = [
-        ["gtceu:oil_medium 20000", 1],
-        ["gtceu:oil 20000", 2],
-        ["gtceu:oil_heavy 15000", 3],
-        ["gtceu:oil_light 25000", 4],
-        ["gtceu:natural_gas 15000", 5],
-        ["gtceu:salt_water 40000", 6]
-    ]
-
-    overworld_fluids.forEach((overworld_fluid) => {
-        gtr.void_fluid_drilling_rig("overworld_fluid_" + overworld_fluid[1])
-            .notConsumable(Item.of("gtocore:dimension_data", `{dim:"minecraft:overworld"}`).weakNBT())
-            .outputFluids(overworld_fluid[0])
-            .circuit(overworld_fluid[1])
-            .EUt(GTValues.VA[GTValues.LuV])
-            .duration(20)
-    })
-
-    const nether_fluids = [
-        ["minecraft:lava 65000", 1],
-        ["gtceu:natural_gas 35000", 2]
-    ]
-
-    nether_fluids.forEach((nether_fluid) => {
-        gtr.void_fluid_drilling_rig("nether_fluid_" + nether_fluid[1])
-            .notConsumable(Item.of("gtocore:dimension_data", `{dim:"minecraft:the_nether"}`).weakNBT())
-            .outputFluids(nether_fluid[0])
-            .circuit(nether_fluid[1])
-            .EUt(GTValues.VA[GTValues.LuV])
-            .duration(20)
-    })
-
     const overworld_ores =
         [[["60x gtceu:bentonite_ore",
             "40x gtceu:magnetite_ore",

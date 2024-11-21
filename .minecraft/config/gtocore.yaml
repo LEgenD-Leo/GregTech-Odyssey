@@ -4,7 +4,7 @@ enablePrimitiveVoidOre: false
 
 disableMultiBlockPage: false
 
-optimizationMultiBlockPage: true
+fastMultiBlockPage: true
 
 oreMultiplier: 4
 
