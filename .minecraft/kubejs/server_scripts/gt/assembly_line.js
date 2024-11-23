@@ -3047,7 +3047,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtocore:nano_core")
         .EUt(GTValues.VA[GTValues.UXV])
         .duration(800)
-        .stationResearch(b => b.researchStack(Registries.getItemStack("gtocore:nano_forge_3"))
+        .stationResearch(b => b.researchStack(Registries.getItemStack("gtocore:nano_forge"))
             .dataStack(Registries.getItemStack("gtceu:data_module"))
             .EUt(GTValues.VA[GTValues.OpV])
             .CWUt(1200))

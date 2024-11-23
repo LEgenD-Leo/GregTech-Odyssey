@@ -31,12 +31,6 @@ ServerEvents.recipes(event => {
         .duration(20)
         .EUt(128)
 
-    gtr.space_elevator("1")
-        .circuit(1)
-        .duration(400)
-        .CWUt(128)
-        .EUt(GTValues.VA[GTValues.UV])
-
     gtr.door_of_create("1")
         .circuit(1)
         .EUt(4 * GTValues.VA[GTValues.MAX])
