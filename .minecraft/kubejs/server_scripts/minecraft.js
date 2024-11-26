@@ -129,8 +129,8 @@ ServerEvents.recipes((event) => {
     gtr.arc_generator("gtocore:nether_star")
         .itemInputs("4x minecraft:soul_sand", "3x minecraft:wither_skeleton_skull")
         .itemOutputs("minecraft:nether_star")
-        .duration(100)
-        .EUt(120)
+        .duration(800)
+        .EUt(1920)
         .addCondition(new GravityCondition(true))
 
     gtr.arc_generator("gtocore:reinforced_deepslate")

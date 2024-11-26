@@ -1,13 +1,10 @@
-disableDrift: true
-
 enablePrimitiveVoidOre: false
 
 disableMultiBlockPage: false
 
 fastMultiBlockPage: true
 
-# For example, Machines that support cross recipe parallel processing will gradually increase the search interval when no recipe is found; this is the maximum time interval, in units of: Tick.
-customRecipeLogicMaxCheckInterval: 20
+customRecipeLogicCheckInterval: 20
 
 oreMultiplier: 4
 

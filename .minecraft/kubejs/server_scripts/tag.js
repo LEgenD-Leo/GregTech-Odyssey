@@ -46,10 +46,6 @@ ServerEvents.tags("fluid", event => {
     event.add("ad_astra_rocketed:tier_7_rocket_fuel", "gtceu:stellar_energy_rocket_fuel")
 })
 
-PlayerEvents.loggedIn(event => {
-    event.player.displayClientMessage(Component.translatable("gto.dev"), false)
-})
-
 ServerEvents.entityLootTables(event => {
     event.addEntity("ad_astra:glacian_ram", l => {
         l.addPool(p => {
