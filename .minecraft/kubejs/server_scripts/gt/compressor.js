@@ -13,29 +13,11 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LV])
         .duration(300)
 
-    gtr.compressor("gtocore:dimensionally_transcendent_steam_oven")
-        .itemInputs("16x gtceu:steam_oven")
-        .itemOutputs("gtocore:dimensionally_transcendent_steam_oven")
-        .EUt(16)
-        .duration(1200)
-
     gtr.compressor("gtocore:spacetime_block")
         .itemInputs("9x gtceu:spacetime_ingot")
         .itemOutputs("gtceu:spacetime_block")
         .EUt(GTValues.VA[GTValues.MAX])
         .duration(3000)
-
-    gtr.compressor("gtocore:dimensionally_transcendent_dirt_forge")
-        .itemInputs("16x gtceu:primitive_blast_furnace")
-        .itemOutputs("gtocore:dimensionally_transcendent_dirt_forge")
-        .EUt(8)
-        .duration(1200)
-
-    gtr.compressor("gtocore:dimensionally_transcendent_steam_boiler")
-        .itemInputs("16x gtceu:tungstensteel_large_boiler")
-        .itemOutputs("gtocore:dimensionally_transcendent_steam_boiler")
-        .EUt(GTValues.VA[GTValues.IV])
-        .duration(1200)
 
     gtr.neutron_compressor("gtocore:combined_singularity_0")
         .itemInputs("64x gtceu:lafium_block", "64x gtceu:potin_block")
