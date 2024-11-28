@@ -177,19 +177,6 @@ ServerEvents.recipes(event => {
         .duration(800)
         .blastFurnaceTemp(18800)
 
-    gtr.dyson_sphere("gtocore:dysonspherelaunch")
-        .itemInputs("64x gtocore:dyson_swarm_module")
-        .EUt(GTValues.V[GTValues.UIV])
-        .duration(200)
-        .CWUt(512)
-
-    gtr.dyson_sphere("gtocore:dysonsphere")
-        .inputFluids("gtocore:gelid_cryotheum 1")
-        .circuit(1)
-        .EUt(-GTValues.V[GTValues.MAX])
-        .duration(20)
-        .CWUt(1)
-
     gtr.rocket_engine("gtceu:rocket_engine_fuel_7")
         .inputFluids("ad_astra:cryo_fuel 10")
         .duration(120)

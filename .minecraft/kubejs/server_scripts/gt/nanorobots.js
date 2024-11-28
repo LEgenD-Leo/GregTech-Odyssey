@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     const gtr = event.recipes.gtceu
 
-    gtr.distort("gtocore:epoxy")
+    gtr.nanorobots_integrated_processing_center("gtocore:epoxy")
         .itemInputs("gtceu:copper_nanoswarm")
         .itemOutputs("gtceu:contaminable_copper_nanoswarm")
         .itemInputs("1x gtceu:phosphorus_dust", "16x gtceu:salt_dust")
@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         .duration(240)
         .blastFurnaceTemp(5600)
 
-    gtr.distort("gtocore:polybenzimidazole")
+    gtr.nanorobots_integrated_processing_center("gtocore:polybenzimidazole")
         .itemInputs("gtceu:iridium_nanoswarm")
         .itemOutputs("gtceu:contaminable_iridium_nanoswarm")
         .notConsumable("gtceu:potassium_dichromate_dust")
@@ -22,9 +22,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
         .duration(2000)
         .blastFurnaceTemp(6000)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:polyphenylene_sulfide")
+    gtr.nanorobots_integrated_processing_center("gtocore:polyphenylene_sulfide")
         .itemInputs("gtceu:silver_nanoswarm")
         .itemOutputs("gtceu:contaminable_silver_nanoswarm")
         .itemInputs("16x gtceu:sulfur_dust")
@@ -33,9 +32,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
         .duration(120)
         .blastFurnaceTemp(800)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:platinum_dust")
+    gtr.nanorobots_integrated_processing_center("gtocore:platinum_dust")
         .itemInputs("gtceu:iridium_nanoswarm")
         .itemOutputs("gtceu:contaminable_iridium_nanoswarm")
         .itemInputs("576x gtceu:platinum_group_sludge_dust", "16x gtceu:sulfur_dust")
@@ -46,7 +44,7 @@ ServerEvents.recipes(event => {
         .duration(2400)
         .blastFurnaceTemp(9000)
 
-    gtr.distort("gtocore:polyimide")
+    gtr.nanorobots_integrated_processing_center("gtocore:polyimide")
         .itemInputs("gtceu:glowstone_nanoswarm")
         .itemOutputs("gtceu:contaminable_glowstone_nanoswarm")
         .itemInputs("486x gtceu:carbon_dust")
@@ -55,9 +53,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.V[GTValues.UEV])
         .duration(2000)
         .blastFurnaceTemp(14400)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:cycloparaphenylene")
+    gtr.nanorobots_integrated_processing_center("gtocore:cycloparaphenylene")
         .itemInputs("gtceu:osmium_nanoswarm")
         .itemOutputs("gtceu:contaminable_osmium_nanoswarm")
         .itemInputs("1920x gtceu:carbon_dust", "64x gtceu:iodine_dust")
@@ -66,9 +63,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(2000)
         .blastFurnaceTemp(16200)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:polyvinyl_chloride")
+    gtr.nanorobots_integrated_processing_center("gtocore:polyvinyl_chloride")
         .itemInputs("gtceu:glowstone_nanoswarm")
         .itemOutputs("gtceu:contaminable_glowstone_nanoswarm")
         .inputFluids("gtceu:oxygen 10000", "gtceu:chlorine 1440", "gtceu:ethylene 1440")
@@ -77,7 +73,7 @@ ServerEvents.recipes(event => {
         .duration(160)
         .blastFurnaceTemp(800)
 
-    gtr.distort("gtocore:silicone_rubber")
+    gtr.nanorobots_integrated_processing_center("gtocore:silicone_rubber")
         .itemInputs("gtceu:carbon_nanoswarm")
         .itemOutputs("gtceu:contaminable_carbon_nanoswarm")
         .itemInputs("3x gtceu:silicon_dust", "gtceu:sulfur_dust")
@@ -87,7 +83,7 @@ ServerEvents.recipes(event => {
         .duration(320)
         .blastFurnaceTemp(1200)
 
-    gtr.distort("gtocore:styrene_butadiene_rubber")
+    gtr.nanorobots_integrated_processing_center("gtocore:styrene_butadiene_rubber")
         .itemInputs("gtceu:iron_nanoswarm")
         .itemOutputs("gtceu:contaminable_iron_nanoswarm")
         .itemInputs("5x gtceu:sulfur_dust")
@@ -97,7 +93,7 @@ ServerEvents.recipes(event => {
         .duration(120)
         .blastFurnaceTemp(1800)
 
-    gtr.distort("gtocore:polytetrafluoroethylene")
+    gtr.nanorobots_integrated_processing_center("gtocore:polytetrafluoroethylene")
         .itemInputs("gtceu:copper_nanoswarm")
         .itemOutputs("gtceu:contaminable_copper_nanoswarm")
         .inputFluids("gtceu:oxygen 5000", "gtceu:methane 1440", "gtceu:fluorine 2880")
@@ -106,7 +102,7 @@ ServerEvents.recipes(event => {
         .duration(240)
         .blastFurnaceTemp(2600)
 
-    gtr.distort("gtocore:naquadria_dust")
+    gtr.nanorobots_integrated_processing_center("gtocore:naquadria_dust")
         .itemInputs("gtceu:naquadah_nanoswarm")
         .itemOutputs("gtceu:contaminable_naquadah_nanoswarm")
         .itemInputs("128x gtceu:naquadah_dust", "16x gtceu:caesium_dust")
@@ -116,9 +112,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
         .duration(3600)
         .blastFurnaceTemp(12600)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:unfolded_fullerene_dust")
+    gtr.nanorobots_integrated_processing_center("gtocore:unfolded_fullerene_dust")
         .itemInputs("gtceu:enderium_nanoswarm")
         .itemOutputs("gtceu:contaminable_enderium_nanoswarm")
         .itemInputs("3780x gtceu:carbon_dust")
@@ -128,9 +123,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(16000)
         .blastFurnaceTemp(16800)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:stem_cells")
+    gtr.nanorobots_integrated_processing_center("gtocore:stem_cells")
         .itemInputs("gtceu:naquadah_nanoswarm")
         .itemOutputs("gtceu:contaminable_naquadah_nanoswarm")
         .chancedInput("gtocore:glacio_spirit", 8000, 100)
@@ -140,9 +134,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV])
         .duration(600)
         .blastFurnaceTemp(12200)
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
-    gtr.distort("gtocore:polyurethaneresin")
+    gtr.nanorobots_integrated_processing_center("gtocore:polyurethaneresin")
         .itemInputs("gtceu:gold_nanoswarm")
         .itemOutputs("gtceu:contaminable_gold_nanoswarm")
         .itemInputs("45x enderio:powdered_tin", "64x gtceu:carbon_dust", "5x gtceu:nickel_dust", "5x gtceu:palladium_dust", "5x enderio:powdered_iron", "36x gtceu:silicon_dust")
@@ -151,9 +144,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UEV])
         .duration(2700)
         .blastFurnaceTemp(16200)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:liquidcrystalkevlar")
+    gtr.nanorobots_integrated_processing_center("gtocore:liquidcrystalkevlar")
         .itemInputs("gtceu:rhenium_nanoswarm")
         .itemOutputs("gtceu:contaminable_rhenium_nanoswarm")
         .notConsumable("gtceu:annealed_copper_dust")
@@ -163,9 +155,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(4000)
         .blastFurnaceTemp(17200)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:zirconium_dust")
+    gtr.nanorobots_integrated_processing_center("gtocore:zirconium_dust")
         .itemInputs("gtceu:osmium_nanoswarm")
         .itemOutputs("gtceu:contaminable_osmium_nanoswarm")
         .itemInputs("1152x gtceu:zircon_dust", "64x gtceu:potassium_dust")
@@ -175,9 +166,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UEV])
         .duration(6400)
         .blastFurnaceTemp(16200)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:hexanitrohexaaxaisowurtzitane_dust")
+    gtr.nanorobots_integrated_processing_center("gtocore:hexanitrohexaaxaisowurtzitane_dust")
         .itemInputs("gtceu:orichalcum_nanoswarm")
         .itemOutputs("gtceu:contaminable_orichalcum_nanoswarm")
         .notConsumable("16x gtocore:unstable_star")
@@ -187,9 +177,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UXV])
         .duration(6400)
         .blastFurnaceTemp(21600)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:photoresist")
+    gtr.nanorobots_integrated_processing_center("gtocore:photoresist")
         .itemInputs("gtceu:uruium_nanoswarm")
         .itemOutputs("gtceu:contaminable_uruium_nanoswarm")
         .itemInputs("91x gtceu:rutile_dust", "60x gtceu:carbon_dust", "42x gtceu:sodium_hydroxide_dust")
@@ -198,9 +187,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UEV])
         .duration(9600)
         .blastFurnaceTemp(16200)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:euv_photoresist")
+    gtr.nanorobots_integrated_processing_center("gtocore:euv_photoresist")
         .itemInputs("gtceu:infuscolium_nanoswarm")
         .itemOutputs("gtceu:contaminable_infuscolium_nanoswarm")
         .itemInputs("30x gtceu:rhenium_dust", "56x gtceu:lithium_dust", "40x gtceu:selenium_dust", "50x gtceu:activated_carbon_dust", "60x gtceu:rutile_dust", "55x gtceu:quicklime_dust")
@@ -209,9 +197,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.OpV])
         .duration(12800)
         .blastFurnaceTemp(21600)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:photopolymer")
+    gtr.nanorobots_integrated_processing_center("gtocore:photopolymer")
         .itemInputs("gtceu:white_dwarf_mtter_nanoswarm")
         .itemOutputs("gtceu:contaminable_white_dwarf_mtter_nanoswarm")
         .itemInputs("768x gtceu:carbon_dust", "50x gtceu:rutile_dust", "70x gtceu:succinic_acid_dust", "32x gtceu:ice_dust", "20x gtceu:silver_dust", "25x gtceu:quicklime_dust", "40x gtceu:boron_dust", "120x gtceu:sodium_dust")
@@ -220,9 +207,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MAX])
         .duration(5120)
         .blastFurnaceTemp(21600)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:polyetheretherketone")
+    gtr.nanorobots_integrated_processing_center("gtocore:polyetheretherketone")
         .itemInputs("gtceu:vibranium_nanoswarm")
         .itemOutputs("gtceu:contaminable_vibranium_nanoswarm")
         .itemInputs("16x gtceu:sodium_dust")
@@ -232,9 +218,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(16400)
         .blastFurnaceTemp(14400)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:zylon_dust")
+    gtr.nanorobots_integrated_processing_center("gtocore:zylon_dust")
         .itemInputs("gtceu:black_dwarf_mtter_nanoswarm")
         .itemOutputs("gtceu:contaminable_black_dwarf_mtter_nanoswarm")
         .itemInputs("1762x gtceu:sulfur_dust", "41x gtceu:sodium_dust")
@@ -243,9 +228,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UXV])
         .duration(3200)
         .blastFurnaceTemp(18900)
-        .cleanroom(CleanroomType.CLEANROOM)
 
-    gtr.distort("gtocore:mutagen")
+    gtr.nanorobots_integrated_processing_center("gtocore:mutagen")
         .itemInputs("gtceu:silver_nanoswarm")
         .itemOutputs("gtceu:contaminable_silver_nanoswarm")
         .itemInputs("256x gtceu:bio_chaff", "gtceu:naquadria_dust")
@@ -254,9 +238,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
         .duration(2000)
         .blastFurnaceTemp(12600)
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
-    gtr.distort("gtocore:biological_cells")
+    gtr.nanorobots_integrated_processing_center("gtocore:biological_cells")
         .itemInputs("gtceu:neutronium_nanoswarm")
         .itemOutputs("gtceu:contaminable_neutronium_nanoswarm")
         .itemInputs("256x gtceu:stem_cells", "64x gtceu:meat_dust", "64x gtceu:salt_dust", "64x gtceu:calcium_dust", "64x gtceu:agar_dust", "4x gtocore:tcetieseaweedextract", "2x gtceu:enriched_naquadah_dust", "gtceu:tritanium_dust")
@@ -265,9 +248,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV])
         .duration(4000)
         .blastFurnaceTemp(16200)
-        .cleanroom(CleanroomType.STERILE_CLEANROOM)
 
-    gtr.distort("gtocore:polyvinyl_butyral")
+    gtr.nanorobots_integrated_processing_center("gtocore:polyvinyl_butyral")
         .itemInputs("gtceu:carbon_nanoswarm")
         .itemOutputs("gtceu:contaminable_carbon_nanoswarm")
         .itemInputs("96x gtceu:carbon_dust", "4x gtceu:rutile_dust")
@@ -277,7 +259,7 @@ ServerEvents.recipes(event => {
         .duration(2400)
         .blastFurnaceTemp(6000)
 
-    gtr.distort("gtocore:cosmic_superconductor")
+    gtr.nanorobots_integrated_processing_center("gtocore:cosmic_superconductor")
         .itemInputs("gtceu:draconium_nanoswarm")
         .itemOutputs("gtceu:contaminable_draconium_nanoswarm")
         .itemInputs("gtceu:phosphorus_dust", "18x gtceu:sulfur_dust", "6x gtceu:sodium_dust", "gtceu:thallium_dust", "6x gtceu:rhenium_chloride_dust", "5x gtceu:hassium_chloride_dust", "36x gtceu:atinium_hydride_dust", "14x gtceu:charged_caesium_cerium_cobalt_indium_dust")
@@ -286,9 +268,8 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.MAX])
         .blastFurnaceTemp(36000)
         .duration(16000)
-        .cleanroom(GTOCleanroomType.LAW_CLEANROOM)
 
-    gtr.distort("gtocore:acidic_naquadria_solution")
+    gtr.nanorobots_integrated_processing_center("gtocore:acidic_naquadria_solution")
         .itemInputs("gtceu:carbon_nanoswarm")
         .itemOutputs("gtceu:contaminable_carbon_nanoswarm")
         .itemInputs("gtceu:enriched_naquadah_dust")
@@ -298,7 +279,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(9000)
         .duration(200)
 
-    gtr.distort("gtocore:acidic_enriched_naquadah_solution")
+    gtr.nanorobots_integrated_processing_center("gtocore:acidic_enriched_naquadah_solution")
         .itemInputs("gtceu:carbon_nanoswarm")
         .itemOutputs("gtceu:contaminable_carbon_nanoswarm")
         .itemInputs("gtceu:naquadria_dust")

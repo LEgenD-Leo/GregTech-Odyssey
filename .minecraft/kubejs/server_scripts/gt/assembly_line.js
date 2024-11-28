@@ -847,7 +847,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UV])
             .CWUt(256))
 
-    gtr.assembly_line("gtocore:resource_collection")
+    gtr.assembly_line("gtocore:resource_collection_module")
         .itemInputs("gtocore:large_void_miner",
             "gtocore:void_fluid_drilling_rig",
             "4x gtceu:uv_robot_arm",
@@ -857,7 +857,7 @@ ServerEvents.recipes(event => {
             "4x gtceu:enriched_naquadah_trinium_europium_duranide_hex_wire",
             "8x gtceu:double_pikyonium_plate")
         .inputFluids("gtceu:soldering_alloy 2880", "gtceu:artherium_tin 2880")
-        .itemOutputs("gtocore:resource_collection")
+        .itemOutputs("gtocore:resource_collection_module")
         .EUt(GTValues.VA[GTValues.UV])
         .duration(1200)
         .stationResearch(b => b.researchStack(Registries.getItemStack("gtceu:luv_large_miner"))
@@ -1285,7 +1285,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtocore:space_probe_surface_reception")
         .EUt(GTValues.VA[GTValues.UXV])
         .duration(400)
-        .stationResearch(b => b.researchStack(Registries.getItemStack("gtocore:resource_collection"))
+        .stationResearch(b => b.researchStack(Registries.getItemStack("gtocore:resource_collection_module"))
             .dataStack(Registries.getItemStack("gtceu:data_module"))
             .EUt(GTValues.VA[GTValues.UXV])
             .CWUt(512))
@@ -1295,7 +1295,7 @@ ServerEvents.recipes(event => {
             "16x gtocore:spacetime_compression_field_generator",
             "16x gtocore:dimensional_stability_casing",
             "64x gtceu:uv_world_accelerator",
-            "64x gtocore:resource_collection",
+            "64x gtocore:resource_collection_module",
             "64x gtceu:high_performance_computation_array",
             "32x gtocore:ctc_computational_unit",
             "32x gtocore:stabilized_wormhole_generator",
@@ -1342,7 +1342,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UIV])
             .CWUt(4096))
 
-    gtr.assembly_line("gtocore:dimensionally_transcendent_mixer")
+    gtr.assembly_line("gtocore:magnetic_confinement_dimensionality_shock_device")
         .itemInputs("16x gtceu:black_titanium_frame",
             "64x gtceu:luv_mixer",
             "48x gtceu:zpm_mixer",
@@ -1360,7 +1360,7 @@ ServerEvents.recipes(event => {
             "4x gtceu:vibranium_nanoswarm",
             "16x gtceu:double_hastelloyx_78_plate")
         .inputFluids("gtceu:mutated_living_solder 12960", "gtceu:niobium_titanium 5760", "gtceu:grisium 5760", "gtceu:black_titanium 5760")
-        .itemOutputs("gtocore:dimensionally_transcendent_mixer")
+        .itemOutputs("gtocore:magnetic_confinement_dimensionality_shock_device")
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(2000)
         .stationResearch(b => b.researchStack(Registries.getItemStack("gtceu:large_mixer"))
@@ -2242,7 +2242,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UIV])
             .CWUt(512))
 
-    gtr.assembly_line("gtocore:dyson_sphere")
+    gtr.assembly_line("gtocore:dyson_receiving_station")
         .itemInputs("4x gtceu:uiv_diode",
             "16x gtocore:pm_wafer",
             "16x gtceu:uiv_sensor",
@@ -2253,7 +2253,7 @@ ServerEvents.recipes(event => {
             "4x gtocore:uxv_voltage_coil",
             "16x gtceu:double_vibranium_plate")
         .inputFluids("gtceu:mutated_living_solder 12000", "gtocore:gelid_cryotheum 12800", "gtceu:scandium 576000", "gtceu:mercury_barium_calcium_cuprate 576000")
-        .itemOutputs("gtocore:dyson_sphere")
+        .itemOutputs("gtocore:dyson_receiving_station")
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(1600)
         .stationResearch(b => b.researchStack(Registries.getItemStack("gtocore:dyson_receiver_casing"))
