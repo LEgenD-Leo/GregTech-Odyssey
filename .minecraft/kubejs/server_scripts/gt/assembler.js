@@ -1918,12 +1918,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
         .duration(1200)
 
-    gtr.assembler("gtocore:plasma_mega_turbine")
-        .itemInputs("8x gtceu:plasma_large_turbine", "16x #gtceu:circuits/uv", "8x gtceu:iv_electric_pump", "16x gtceu:iv_electric_piston", "8x gtceu:osmiridium_turbine_blade", "8x gtceu:double_ultimet_plate", "32x gtceu:double_tungsten_steel_plate")
-        .itemOutputs("gtocore:plasma_mega_turbine")
-        .EUt(GTValues.VA[GTValues.LuV])
-        .duration(1200)
-
     gtr.assembler("gtocore:chemical_energy_devourer")
         .itemInputs("4x gtceu:extreme_combustion_engine", "4x gtceu:iv_field_generator", "8x gtceu:iv_emitter", "8x gtceu:iv_electric_pump", "16x gtceu:ev_fluid_regulator", "8x gtceu:small_tungsten_spring", "8x gtceu:small_vanadium_gallium_spring", "8x gtceu:luv_transformer_4a", "4x gtceu:dense_tungsten_steel_plate")
         .inputFluids("gtceu:lubricant 10000")

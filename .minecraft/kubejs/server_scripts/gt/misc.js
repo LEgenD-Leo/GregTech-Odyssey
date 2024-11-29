@@ -16,11 +16,6 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(30)
 
-    gtr.block_conversion("1")
-        .circuit(1)
-        .duration(400)
-        .EUt(128)
-
     gtr.slaughterhouse("1")
         .circuit(1)
         .duration(20)
