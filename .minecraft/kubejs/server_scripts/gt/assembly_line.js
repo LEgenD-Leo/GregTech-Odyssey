@@ -2242,7 +2242,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UIV])
             .CWUt(512))
 
-    gtr.assembly_line("gtocore:dyson_receiving_station")
+    gtr.assembly_line("gtocore:dyson_sphere_receiving_station")
         .itemInputs("4x gtceu:uiv_diode",
             "16x gtocore:pm_wafer",
             "16x gtceu:uiv_sensor",
@@ -2253,7 +2253,7 @@ ServerEvents.recipes(event => {
             "4x gtocore:uxv_voltage_coil",
             "16x gtceu:double_vibranium_plate")
         .inputFluids("gtceu:mutated_living_solder 12000", "gtocore:gelid_cryotheum 12800", "gtceu:scandium 576000", "gtceu:mercury_barium_calcium_cuprate 576000")
-        .itemOutputs("gtocore:dyson_receiving_station")
+        .itemOutputs("gtocore:dyson_sphere_receiving_station")
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(1600)
         .stationResearch(b => b.researchStack(Registries.getItemStack("gtocore:dyson_receiver_casing"))

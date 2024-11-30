@@ -54,6 +54,16 @@ ServerEvents.recipes(event => {
         })
     })
 
+    event.shaped(Item.of("gtceu:flint_axe", "{DisallowContainerItem:0b,GT.Behaviours:{DisableShields:1b},GT.Tool:{AttackDamage:6.0f,AttackSpeed:-3.2f,Damage:0,HarvestLevel:2,MaxDamage:16,ToolSpeed:3.5f},HideFlags:2}"), [
+        "AA ",
+        "BC ",
+        "   "
+    ], {
+        A: "minecraft:flint",
+        B: "gtocore:plant_fiber",
+        C: "minecraft:stick"
+    })
+
     event.shaped("gtocore:warped_ender_pearl", [
         "ABA",
         "BDB",

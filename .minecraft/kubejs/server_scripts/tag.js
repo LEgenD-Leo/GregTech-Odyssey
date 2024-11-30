@@ -54,3 +54,11 @@ ServerEvents.entityLootTables(event => {
         })
     })
 })
+
+ServerEvents.blockLootTables(event => {
+    event.addBlock("minecraft:grass", b => {
+        b.addPool(p => {
+            p.addItem("gtocore:plant_fiber").randomChance(0.05)
+        })
+    })
+})

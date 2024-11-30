@@ -1,11 +1,11 @@
 {
   "general": {
     "debug": false,
-    "itemModNameTooltip": true,
+    "itemModNameTooltip": false,
     "bossBarOverlapMode": "PUSH_DOWN",
     "builtinCamouflage": true,
     "ttsMode": "PRESS",
-    "fluidMode": "ANY",
+    "fluidMode": "SOURCE_ONLY",
     "reachDistance": 10.0,
     "displayEntities": true,
     "displayBosses": true,

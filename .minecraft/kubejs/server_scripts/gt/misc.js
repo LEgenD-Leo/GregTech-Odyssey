@@ -1407,4 +1407,16 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtocore:special_ceramics")
         .EUt(GTValues.VA[GTValues.HV])
         .duration(20)
+
+    gtr.loom("gtocore:plant_fiber")
+        .itemInputs("1x gtceu:plant_ball")
+        .itemOutputs("2x gtocore:plant_fiber")
+        .EUt(7)
+        .duration(200)
+
+    gtr.loom("gtocore:string")
+        .itemInputs("4x gtocore:plant_fiber")
+        .itemOutputs("1x minecraft:string")
+        .EUt(1920)
+        .duration(20)
 })
