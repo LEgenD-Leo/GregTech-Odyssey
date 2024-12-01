@@ -47,17 +47,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
         .duration(400)
 
-    gtr.distillation_tower("gtocore:grade_3_purified_water")
-        .inputFluids("gtceu:grade_2_purified_water 1000")
-        .outputFluids("gtceu:grade_3_purified_water 900")
-        .outputFluids("gtceu:grade_2_purified_water 50")
-        .outputFluids("gtceu:grade_1_purified_water 50")
-        .outputFluids("gtceu:oil 10")
-        .outputFluids("gtceu:ammonia 10")
-        .EUt(1920)
-        .duration(200)
-        .disableDistilleryRecipes(true)
-
     gtr.distillery("gtocore:fluoro_benzene")
         .inputFluids("gtceu:benzenediazonium_tetrafluoroborate 1000")
         .outputFluids("gtceu:fluoro_benzene 1000")
@@ -83,14 +72,6 @@ ServerEvents.recipes(event => {
         .circuit(12)
         .EUt(30)
         .duration(240)
-
-    gtr.distillery("gtocore:grade_10_purified_water")
-        .inputFluids("gtceu:grade_9_purified_water 1000")
-        .itemInputs("minecraft:echo_shard")
-        .outputFluids("gtceu:grade_10_purified_water 900")
-        .itemOutputs("9x gtceu:tiny_echo_shard_dust")
-        .EUt(GTValues.VA[GTValues.UHV])
-        .duration(200)
 
     gtr.distillery("gtocore:kerosene")
         .itemInputs("gtceu:coke_dust")

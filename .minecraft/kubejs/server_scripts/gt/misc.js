@@ -804,14 +804,6 @@ ServerEvents.recipes(event => {
         .EUt(120)
         .duration(400)
 
-    gtr.arc_furnace("gtocore:grade_13_purified_water")
-        .inputFluids("gtceu:grade_12_purified_water 10000")
-        .itemInputs("gtceu:degenerate_rhenium_dust")
-        .itemOutputs("gtceu:degenerate_rhenium_plate")
-        .outputFluids("gtceu:grade_13_purified_water 9990")
-        .EUt(GTValues.VA[GTValues.UIV])
-        .duration(60)
-
     gtr.arc_furnace("gtocore:cosmic_singularity")
         .itemInputs("avaritia:eternal_singularity")
         .inputFluids("gtceu:magneto_hydro_dynamically_con_strained_star_matter 9216")
@@ -897,12 +889,6 @@ ServerEvents.recipes(event => {
         .EUt(480)
         .duration(400)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
-
-    gtr.fluid_heater("gtocore:grade_2_purified_water")
-        .inputFluids("gtceu:grade_1_purified_water 1000")
-        .outputFluids("gtceu:grade_2_purified_water 900")
-        .EUt(7680)
-        .duration(200)
 
     gtr.fluid_heater("gtocore:supercritical_carbon_dioxide")
         .inputFluids("gtceu:carbon_dioxide 1000")
@@ -1002,13 +988,6 @@ ServerEvents.recipes(event => {
         .EUt(480)
         .duration(6000)
         .cleanroom(GTOCleanroomType.LAW_CLEANROOM)
-
-    gtr.brewery("gtocore:grade_8_purified_water")
-        .inputFluids("gtceu:grade_7_purified_water 1000")
-        .notConsumable("gtceu:neutronium_dust")
-        .outputFluids("gtceu:grade_8_purified_water 1000")
-        .EUt(122880)
-        .duration(200)
 
     gtr.fermenter("gtocore:taranium_dust")
         .inputFluids("gtceu:taranium_rich_liquid_helium_4 1000")
@@ -1382,24 +1361,6 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:salt_water 1000")
         .EUt(30)
         .duration(600)
-
-    gtr.evaporation("gtocore:grade_7_purified_water")
-        .inputFluids("gtceu:grade_6_purified_water 1000000")
-        .outputFluids("gtceu:grade_7_purified_water 900000")
-        .outputFluids("gtceu:grade_6_purified_water 50000")
-        .outputFluids("gtceu:grade_5_purified_water 20000")
-        .outputFluids("gtceu:acetic_acid 20")
-        .outputFluids("gtceu:ethanol 40")
-        .EUt(524288)
-        .duration(4000)
-
-    gtr.evaporation("gtocore:grade_12_purified_water")
-        .inputFluids("gtceu:grade_11_purified_water 10000000")
-        .itemOutputs("gtceu:tiny_neutronium_dust")
-        .outputFluids("gtceu:grade_12_purified_water 9999000")
-        .outputFluids("gtceu:helium_3 100")
-        .EUt(GTValues.VA[GTValues.UHV])
-        .duration(2000)
 
     gtr.extruder("gtocore:special_ceramics")
         .itemInputs("2x gtceu:special_ceramics_dust")

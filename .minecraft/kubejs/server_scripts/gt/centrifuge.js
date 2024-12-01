@@ -102,17 +102,6 @@ ServerEvents.recipes(event => {
         .EUt(480)
         .duration(500)
 
-    gtr.centrifuge("gtocore:grade_1_purified_water")
-        .inputFluids("minecraft:water 1000")
-        .chancedOutput("gtceu:small_stone_dust", 5000, 0)
-        .chancedOutput("gtceu:small_clay_dust", 2000, 0)
-        .chancedOutput("gtceu:small_calcite_dust", 1000, 0)
-        .chancedOutput("gtceu:small_salt_dust", 1000, 0)
-        .chancedOutput("gtceu:polyethylene_nugget", 100, 0)
-        .outputFluids("gtceu:grade_1_purified_water 900")
-        .EUt(1920)
-        .duration(200)
-
     gtr.centrifuge("gtocore:rare_earth_chlorides")
         .notConsumable("gtceu:hv_item_magnet")
         .inputFluids("gtceu:rare_earth_chlorides 2000")

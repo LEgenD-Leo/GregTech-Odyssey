@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     const gtr = event.recipes.gtceu
 
     gtr.chemical_bath("gtocore:high_strength_concrete")
-        .itemInputs("#forge:concretes")
+        .itemInputs("gtceu:steel_frame")
         .inputFluids("gtceu:concrete 1152")
         .itemOutputs("gtocore:high_strength_concrete")
         .EUt(480)
@@ -114,14 +114,6 @@ ServerEvents.recipes(event => {
         .chancedOutput("gtceu:caesium_dust", 8000, 500)
         .EUt(120)
         .duration(200)
-
-    gtr.chemical_bath("gtocore:grade_4_purified_water")
-        .itemInputs("64x gtceu:activated_carbon_dust")
-        .inputFluids("gtceu:grade_3_purified_water 1000")
-        .itemOutputs("64x gtceu:carbon_dust")
-        .outputFluids("gtceu:grade_4_purified_water 950")
-        .EUt(480)
-        .duration(600)
 
     gtr.chemical_bath("gtocore:damascus_steel_dust")
         .itemInputs("gtceu:steel_dust")

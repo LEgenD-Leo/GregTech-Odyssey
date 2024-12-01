@@ -374,14 +374,6 @@ ServerEvents.recipes(event => {
         .EUt(120)
         .duration(100)
 
-    gtr.mixer("gtocore:grade_9_purified_water")
-        .inputFluids("gtceu:grade_8_purified_water 1000", "gtceu:liquid_oxygen 1000")
-        .itemInputs("minecraft:blaze_powder")
-        .outputFluids("gtceu:grade_9_purified_water 900")
-        .itemOutputs("gtceu:dark_ash_dust")
-        .EUt(524288)
-        .duration(600)
-
     gtr.mixer("gtocore:antihydrogen")
         .inputFluids("gtceu:positive_electron 200", "gtceu:antiproton 200")
         .notConsumable("gtceu:uv_field_generator")

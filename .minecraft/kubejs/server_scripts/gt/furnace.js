@@ -65,15 +65,6 @@ ServerEvents.recipes(event => {
         .duration(24000)
         .blastFurnaceTemp(10500)
 
-    gtr.electric_blast_furnace("gtocore:grade_6_purified_water")
-        .notConsumable("gtceu:luv_fluid_regulator")
-        .inputFluids("gtceu:grade_5_purified_water 1000")
-        .outputFluids("gtceu:grade_6_purified_water 900")
-        .chancedOutput("gtceu:tiny_ammonium_chloride_dust", 500, 0)
-        .EUt(122880)
-        .duration(80)
-        .blastFurnaceTemp(6740)
-
     gtr.electric_blast_furnace("gtocore:giga_chad")
         .itemInputs("64x gtceu:uiv_field_generator", "64x gtceu:uxv_field_generator", "64x gtceu:opv_field_generator")
         .inputFluids("gtceu:exciteddtec 10000000")
