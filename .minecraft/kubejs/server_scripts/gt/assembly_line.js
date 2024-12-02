@@ -2394,10 +2394,10 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VA[GTValues.UEV])
             .CWUt(256))
 
-    gtr.assembly_line("gtocore:mega_fluid_heater")
+    gtr.assembly_line("gtocore:molten_core")
         .itemInputs("16x gtceu:uev_fluid_heater", "8x #gtceu:circuits/uxv", "16x gtceu:uiv_fluid_heater", "16x gtceu:uiv_fluid_regulator", "16x gtceu:titansteel_hex_wire", "16x gtceu:double_mithril_plate", "16x gtceu:double_quantum_plate")
         .inputFluids("gtceu:taranium 2304", "gtceu:vibranium 2304", "gtceu:astral_titanium_plasma 4608", "gtceu:degenerate_rhenium_plasma 4608")
-        .itemOutputs("gtocore:mega_fluid_heater")
+        .itemOutputs("gtocore:molten_core")
         .EUt(GTValues.VA[GTValues.UIV])
         .duration(1600)
         .stationResearch(b => b.researchStack(Registries.getItemStack("gtceu:uiv_fluid_heater"))
