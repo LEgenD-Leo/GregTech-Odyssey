@@ -289,19 +289,6 @@ ServerEvents.recipes((event) => {
         .duration(2400)
     ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Registries.getItemStack("gtocore:cell_component_256m")).dataStack(Registries.getItemStack("gtceu:data_orb")).EUt(GTValues.VA[GTValues.UV]).duration(2400))
 
-    for (let index = 0; index < 33; index++) {
-        event.shaped(Item.of("expatternprovider:infinity_cell", `{record:{"#c":"ae2:i",id:"gtceu:programmed_circuit",tag:{Configuration:${index}}}}`), [
-            "BAB",
-            "ADA",
-            "CCC"
-        ], {
-            A: Item.of("gtceu:programmed_circuit", `{Configuration:${index}}`).weakNBT(),
-            B: "ae2:quartz_glass",
-            C: "minecraft:diamond",
-            D: "ae2:cell_component_16k"
-        })
-    }
-
     gtr.forming_press("gtocore:fishbig_fabric")
         .itemInputs("64x gtceu:magneto_hydro_dynamically_con_strained_star_matter_foil", "64x gtceu:shirabon_foil", "64x gtocore:two_way_foil", "64x gtceu:cosmic_foil", "64x gtceu:cosmic_neutronium_foil", "64x gtceu:eternity_foil")
         .itemOutputs("gtocore:fishbig_fabric")
