@@ -12,3 +12,6 @@ spacetimePip: 2147483647
 
 eioFluidRate: 16
 
+breakBlocksBlackList:
+  - ae2:cable_bus
+

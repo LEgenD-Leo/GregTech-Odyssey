@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
     gtr.nanorobots_integrated_processing_center("gtocore:epoxy")
         .itemInputs("gtceu:copper_nanoswarm")
         .itemOutputs("gtceu:contaminable_copper_nanoswarm")
-        .itemInputs("1x gtceu:phosphorus_dust", "16x gtceu:salt_dust")
+        .itemInputs("gtceu:phosphorus_dust", "16x gtceu:salt_dust")
         .inputFluids("minecraft:water 21500", "gtceu:oxygen 10500", "gtceu:propene 4000", "gtceu:benzene 6000")
         .itemOutputs("86x gtceu:sodium_hydroxide_dust")
         .outputFluids("gtceu:epoxy 4000", "gtceu:hydrogen 16000", "gtceu:hydrochloric_acid 4000")

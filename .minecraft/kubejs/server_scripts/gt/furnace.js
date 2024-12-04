@@ -314,7 +314,7 @@ ServerEvents.recipes(event => {
 
     gtr.reaction_furnace("gtocore:hafnium_dust")
         .itemInputs("5x gtceu:hafnium_chloride_dust", "2x gtceu:magnesium_dust")
-        .itemOutputs("1x gtceu:hafnium_dust", "6x gtceu:magnesium_chloride_dust")
+        .itemOutputs("gtceu:hafnium_dust", "6x gtceu:magnesium_chloride_dust")
         .EUt(120)
         .duration(300)
         .blastFurnaceTemp(3400)
@@ -337,7 +337,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(2800)
 
     gtr.reaction_furnace("gtocore:cadmium_sulfide_dust")
-        .itemInputs("1x gtceu:cadmium_dust", "1x gtceu:sulfur_dust")
+        .itemInputs("gtceu:cadmium_dust", "gtceu:sulfur_dust")
         .itemOutputs("2x gtceu:cadmium_sulfide_dust")
         .EUt(30)
         .duration(400)

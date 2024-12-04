@@ -28,8 +28,8 @@ ServerEvents.recipes(event => {
             "2x #forge:gt_ores/tantalite"], "gtocore:manganese_vein_ow_essence"],
 
         [["25x #forge:gt_ores/chalcopyrite",
-            "1x #forge:gt_ores/zeolite",
-            "1x #forge:gt_ores/cassiterite",
+            "#forge:gt_ores/zeolite",
+            "#forge:gt_ores/cassiterite",
             "5x #forge:gt_ores/realgar"], "gtocore:copper_tin_vein_essence"],
 
         [["24x #forge:gt_ores/coal"], "gtocore:coal_vein_essence"],
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
             "8x #forge:gt_ores/gypsum"], "gtocore:mineral_sand_vein_essence"],
 
         [["15x #forge:gt_ores/rock_salt",
-            "1x #forge:gt_ores/salt",
+            "#forge:gt_ores/salt",
             "5x #forge:gt_ores/lepidolite",
             "5x #forge:gt_ores/spodumene"], "gtocore:salts_vein_essence"],
 
@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
             "2x #forge:gt_ores/tantalite"], "gtocore:manganese_vein_essence"],
 
         [["15x #forge:gt_ores/wulfenite",
-            "1x #forge:gt_ores/molybdenite",
+            "#forge:gt_ores/molybdenite",
             "5x #forge:gt_ores/molybdenum",
             "5x #forge:gt_ores/powellite"], "gtocore:molybdenum_vein_essence"],
 
@@ -159,7 +159,7 @@ ServerEvents.recipes(event => {
 
         [["3x #forge:gt_ores/sulfur",
             "2x #forge:gt_ores/pyrite",
-            "1x #forge:gt_ores/sphalerite"], "gtocore:sulfur_vein_essence"]]
+            "#forge:gt_ores/sphalerite"], "gtocore:sulfur_vein_essence"]]
 
     nether_ore.forEach((nether_) => {
         gtr.incubator("nether_e_" + nether_[1])

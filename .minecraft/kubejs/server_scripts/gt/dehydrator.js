@@ -110,9 +110,9 @@ ServerEvents.recipes(event => {
 
     gtr.dehydrator("gtocore:residual_triniite_solution")
         .inputFluids("gtceu:residual_triniite_solution 2000")
-        .itemOutputs("1x gtceu:salt_dust", "20x gtceu:sodium_nitrate_dust")
+        .itemOutputs("gtceu:salt_dust", "20x gtceu:sodium_nitrate_dust")
         .chancedOutput("2x gtceu:naquadria_dust", 4800, 0)
-        .chancedOutput("1x gtceu:enriched_naquadah_dust", 5200, 0)
+        .chancedOutput("gtceu:enriched_naquadah_dust", 5200, 0)
         .EUt(GTValues.VA[GTValues.IV])
         .duration(190)
 
