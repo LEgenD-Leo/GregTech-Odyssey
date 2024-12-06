@@ -1691,10 +1691,10 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.EV])
         .duration(220)
 
-    gtr.chemical_reactor("gtocore:saturated_fullerene_sieving_matrix")
+    gtr.large_chemical_reactor("gtocore:saturated_fullerene_sieving_matrix")
         .itemInputs("gtocore:saturated_fullerene_sieving_matrix")
         .inputFluids("gtceu:krypton_difluoride 16000", "gtceu:fluoroantimonic_acid 8000")
-        .itemOutputs("32x gtceu:antimony_trifluoride_dust", "50x gtceu:fluorocarborane_dust")
+        .itemOutputs("32x gtceu:antimony_trifluoride_dust", "50x gtceu:fluorocarborane_dust","gtceu:fullerene_dust")
         .outputFluids("gtceu:krypton 16000", "gtceu:heavily_fluorinated_trinium_solution 8000")
         .EUt(GTValues.VA[GTValues.ZPM])
         .duration(180)
