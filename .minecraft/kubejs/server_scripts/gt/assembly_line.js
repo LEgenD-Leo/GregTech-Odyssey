@@ -2758,7 +2758,7 @@ ServerEvents.recipes(event => {
         .itemInputs("4x gtceu:naquadria_frame")
         .itemInputs("4x gtceu:vibranium_frame")
         .itemInputs("16x gtceu:heavy_quark_degenerate_matter_tiny_fluid_pipe")
-        .itemInputs("gtceu:fullerene_polymer_matrix_pulp_tiny_fluid_pipe")
+        .itemInputs("16x gtceu:fullerene_polymer_matrix_pulp_tiny_fluid_pipe")
         .itemInputs("16x gtceu:neutronium_tiny_fluid_pipe")
         .itemInputs("16x gtceu:enderium_tiny_fluid_pipe")
         .itemInputs("2x gtceu:uiv_electric_pump")

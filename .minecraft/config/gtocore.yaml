@@ -4,7 +4,7 @@ disableMultiBlockPage: false
 
 fastMultiBlockPage: true
 
-customRecipeLogicCheckInterval: 20
+recipeLogicCheckInterval: 20
 
 oreMultiplier: 4
 
