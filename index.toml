@@ -822,7 +822,7 @@ hash = "885e16587f6252edbe39e875f04d515bf6c82813cc4d027a20b06683f38547e1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/main-stoneage.snbt"
-hash = "e235c4ad93348ae3073f2f62c603040e540383275eb7bdae143bcc4b5f1091a1"
+hash = "5f483f5ec913404a9fb5c3ba57ce889f77ac1bd3d5bad0b5cb0ac0054ad47db9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/massive-manufacturing.snbt"
@@ -1126,11 +1126,11 @@ hash = "698723d8cdbdf5ecfc128e8bd6965c3f7b19cf7b60a85f4117c8a94a12748924"
 
 [[files]]
 file = "config/openloader/resources/quests/assets/gto/lang/zh_cn.json"
-hash = "b1ac30c1c311a98734bea5574ac2532cf1a8e8dcd3789e5f5324a36175eaa664"
+hash = "63beebff3f9bbc27398232f1b4fa174042047c16dc190a43d10c73fb7a5f2a62"
 
 [[files]]
 file = "config/openloader/resources/quests/assets/gto/lang/zh_tw.json"
-hash = "f07167c8a0f5c36f90648415828a7809f9810ed72d2cf1f3ba69cb7a4dae1dc6"
+hash = "76dfe8afdee1eea7459c75579f0b36b1fe0a3a49ca017261573d84c4d8ac837f"
 
 [[files]]
 file = "config/openloader/resources/quests/pack.mcmeta"
