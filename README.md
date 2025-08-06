@@ -16,8 +16,7 @@ GregTech-Odyssey is a fully optimized tech-oriented GT modpack designed to offer
 - All content in this series is prohibited for commercial use.
 - This modpack is licensed under [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 - The [core mod code](https://github.com/GregTech-Odyssey/GTOCore) (`src/main/java/` portion) is licensed under the [GNU GENERAL PUBLIC LICENSE Version 3](https://www.gnu.org/licenses/gpl-3.0.html).
-- Rights to quests (texts) are reserved. Unauthorized use is prohibited.
-- All our original textures follow CC BY-NC-SA 4.0 license
+- Rights to quests (texts) and original textures are reserved. Unauthorized use is prohibited.
 
 ## Usage
 

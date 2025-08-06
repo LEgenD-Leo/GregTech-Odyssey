@@ -51,7 +51,6 @@
 /*.zip
 /*.mrpack
 /result
-packwiz.exe
 
 !gtocore-*.jar
 config/flywheel-client.toml
